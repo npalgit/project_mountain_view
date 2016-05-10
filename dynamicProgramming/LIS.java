@@ -11,14 +11,21 @@ class LIS {
 
     public static void main(String[] args) {
         int[] arr = { 10, 22, 9, 33, 21, 50, 41, 60, 80 };
+
+        // brute force
         System.out.println("lenght: " + lis(arr, 0));
 
+        // brute force sequence
         ArrayList<Integer> result = lis_sequence(arr, 0);
         System.out.print("length: " + result.size() + " | ");
         System.out.print("sequence: ");
         for (Integer i : result) {
             System.out.print(i + ", ");
         }
+
+        // dp result
+        System.out.println();
+        System.out.println("lengh_dp: " + lis_dp(arr));
 
     }
 
@@ -63,6 +70,22 @@ class LIS {
 
         return max_list;
 
+    }
+
+    /** Dynamic programming LIS */
+    public static int lis_dp(int[] arr) {
+        int[] partialResult = new int[arr.length];
+        partialResult[arr.length-1] = 1;
+        int max;
+
+        for (int i = arr.length-1; i >= 0; i--) {
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[j] > arr[i] && partialResult[i] < partialResult[j] + 1)
+                    partialResult[i] = partialResult[j] + 1;
+            }
+        }
+  
+          return partialResult[0];
     }
 }
 
