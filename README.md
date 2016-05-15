@@ -2,3 +2,13 @@
 Various interview question and solutions sourced from the web or questions I made up, featuring various topics and questions solutions in Java and Python.
 #Current Topics
 - Dynamic Programming
+- Array
+- Data Structure
+
+#Notes on dataStructure
+It contains various dataStructure I implemented both for exercise purpose. Those dataStructures may be used by other coding interview questions in this repo.
+*To Compile a file that depends on a class from dataStructure subdirectory:
+    - Go outside of root interview directory and compile.
+    For example:
+    - javac interview/array/KLargestInArray.java
+    - java interview/array/KLargestInArray
