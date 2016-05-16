@@ -6,7 +6,7 @@ Various interview question and solutions sourced from the web or questions I mad
 - Data Structure
 
 #Notes on dataStructure
-It contains various dataStructure I implemented both for exercise purpose. Those dataStructures may be used by other coding interview questions in this repo.
+It contains various dataStructure I implemented both for exercise purpose and dependency by other code--those dataStructures may be used by other coding interview questions in this repo.
 ## To Compile a file that depends on a class from dataStructure subdirectory: 
     - Make sure the class contains package.interview.subdirectory; 
     - Go outside of root interview directory and compile.
