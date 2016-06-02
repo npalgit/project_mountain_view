@@ -1,3 +1,4 @@
+package interview.dataStructure;
 class LinkedListNode<E> {
     private E item;
     private LinkedListNode next;
@@ -5,6 +6,8 @@ class LinkedListNode<E> {
     public LinkedListNode(E item) {
         this.item = item;
     }
+
+    public LinkedListNode() {}
 
     public void setItem(E item) {
         this.item = item;
@@ -18,7 +21,7 @@ class LinkedListNode<E> {
         next = node;
     }
 
-    public LinkedListNode getNext() {
+    public LinkedListNode<E> getNext() {
         return this.next;
     }
 

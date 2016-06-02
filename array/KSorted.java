@@ -12,6 +12,7 @@ source: http://www.geeksforgeeks.org/nearly-sorted-algorithm/
 
 package interview.array;
 import interview.dataStructure.MaxHeap;
+import java.util.Arrays;
 
 class KSorted {
     public static void main(String[] args) {
@@ -19,21 +20,14 @@ class KSorted {
         System.out.println("test1:");
         int[] arr =  {4, 3, 6, 5, 0, 1, 2};
         int[] result = kSorted(arr, 2);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(result[i] + ", ");
-        }
+        System.out.println(Arrays.toString(result));
 
-         System.out.println("\ntest2:");
-         result = kSorted(arr, 4);
-          for (int i = 0; i < arr.length; i++) {
-            System.out.print(result[i] + ", ");
-        }
+        System.out.println("test2:");
+        result = kSorted(arr, 4);
+        System.out.println(Arrays.toString(result));
 
-        System.out.println("\ntest3:");
-         result = kSorted(arr, 10);
-          for (int i = 0; i < arr.length; i++) {
-            System.out.print(result[i] + ", ");
-        }
+        System.out.println("test3:");
+        System.out.println(Arrays.toString(result));
 
     }
 
