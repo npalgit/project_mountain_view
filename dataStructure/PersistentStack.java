@@ -14,7 +14,7 @@ import java.util.HashMap;
   * 3. go back to an old version then push, make a copy of previous version.
   * 4. go back to an old version then pop, don't make a copy of previous version.
   */
-class PersistentStack {
+public class PersistentStack {
     public HashMap<Integer, LinkedListNode<Integer>> record = new HashMap<Integer, LinkedListNode<Integer>>();
     private Integer totalVersion = new Integer(0);
     private Integer currentVersion = new Integer(0);

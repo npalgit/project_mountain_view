@@ -1,5 +1,5 @@
 package interview.dataStructure;
-class LinkedListNode<E> {
+public class LinkedListNode<E> {
     private E item;
     private LinkedListNode next;
 
