@@ -1,7 +1,7 @@
 package interview.dataStructure;
 import java.util.LinkedList;
 
-class BTNode {
+public class BTNode {
     public BTNode left, right;
     public int data;
 
@@ -40,20 +40,17 @@ class BTNode {
         n33.right = n37;
         n37.left = n35;
         // print BTNode tree
-        printLevelOrder(head);
+        head.printLevelOrder();
         System.out.println();
     }
 
 
-    public static void printLevelOrder(BTNode n) {
-        if (n == null)
-            return; 
-
+    public void printLevelOrder() {
         LinkedList<BTNode> q = new LinkedList<BTNode>();
-        q.add(n);
+        q.add(this);
 
         while (!q.isEmpty()) {
-            n = q.removeFirst();
+            BTNode n = q.removeFirst();
 
             int leftVal = -1; // representing null value
             int rightVal = -1; // representing null value
