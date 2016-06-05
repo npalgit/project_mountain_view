@@ -3,7 +3,12 @@ Various interview question and solutions sourced from the web or questions I mad
 #Current Topics
 - Dynamic Programming
 - Array
-- Data Structure
+- Data Structures
+- Graph
+- Sorting
+- Searching
+- Trees
+- String
 
 #Notes on dataStructure
 It contains various dataStructure I implemented both for exercise purpose and dependency by other code--those dataStructures may be used by other coding interview questions in this repo.
