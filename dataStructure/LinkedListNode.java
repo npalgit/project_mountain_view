@@ -1,7 +1,7 @@
 package interview.dataStructure;
 public class LinkedListNode<E> {
     private E item;
-    private LinkedListNode next;
+    private LinkedListNode<E> next;
 
     public LinkedListNode(E item) {
         this.item = item;
@@ -17,7 +17,7 @@ public class LinkedListNode<E> {
         return this.item;
     }
 
-    public void setNext(LinkedListNode node) {
+    public void setNext(LinkedListNode<E> node) {
         next = node;
     }
 
