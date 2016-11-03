@@ -29,7 +29,7 @@ def swap(i, j, list):
     list[i] = list[j]
     list[j] = tmp
 
-def main():
+def test():
     list = [-1, -2, 1, 9, 5, 13, 0]
     rslt = smallestPostiveIntegerNotInList(list)
     assert(rslt == 2)
@@ -47,5 +47,5 @@ def main():
     assert(rslt == 5)
 
 # run main method
-main()
+test()
 print("passed all tests")
