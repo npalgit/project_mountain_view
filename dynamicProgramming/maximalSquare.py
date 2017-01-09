@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 Given a 2d binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
-Taken from leetcode.
+leetcode #221.
 """
 
 def maximal_square_dp(mtx):
