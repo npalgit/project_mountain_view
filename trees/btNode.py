@@ -3,4 +3,3 @@ class BTNode:
         self.value = value
         self.left = l_child
         self.right = r_child
-
