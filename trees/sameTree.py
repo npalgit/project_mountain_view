@@ -3,7 +3,7 @@ from btNode import BTNode
 """
 Given two binary trees, write a function to check if they are equal or not.
 
-Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+Two binary trees are considered equal if they are structurally identical and the nodes have the same val.
 
 leetcode #100
 """
@@ -11,7 +11,7 @@ def isSameT(p, q):
     if p is None or q is None:
         return p == q
 
-    if p.value != q.value:
+    if p.val != q.val:
         return False
 
     return isSameT(p.left, q.left) and isSameT(p.right, q.right)

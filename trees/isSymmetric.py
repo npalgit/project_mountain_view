@@ -7,7 +7,7 @@ def isSymmetric(root):
 def symHelper(lhs, rhs):
     if lhs == None or rhs == None:
         return lhs == rhs
-    if lhs.value != rhs.value:
+    if lhs.val != rhs.val:
         return False
 
     return symHelper(lhs.left, rhs.right) and symHelper(lhs.right, rhs.left)

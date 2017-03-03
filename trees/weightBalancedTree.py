@@ -17,7 +17,7 @@ def is_weight_balanced(n):
     if lhs[0] != rhs[0]:
         return (0, False)
 
-    return (lhs[0] + rhs[0] + n.value, True)
+    return (lhs[0] + rhs[0] + n.val, True)
 
 
 def test1():

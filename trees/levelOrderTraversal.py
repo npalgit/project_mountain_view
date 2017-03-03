@@ -2,7 +2,7 @@
 from btNode import BTNode
 
 """
-Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+Given a binary tree, return the level order traversal of its nodes' vals. (ie, from left to right, level by level).
         3
         / \
         9  20
@@ -25,7 +25,7 @@ def lot(n, level, lst):
     if len(lst) < level + 1:
         lst.append([])
 
-    lst[level].append(n.value)
+    lst[level].append(n.val)
 
     lot(n.left, level+1, lst)
     lot(n.right, level+1, lst)

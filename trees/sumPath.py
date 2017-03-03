@@ -3,12 +3,12 @@ from btNode import BTNode
 
 def pathSum(n, s, k):
     """
-    Return whether a path from root to leaf path sumit to a target value, denoted by k.
+    Return whether a path from root to leaf path sumit to a target val, denoted by k.
     """
     if n is None:
         return False
 
-    s += n.value
+    s += n.val
     if n.left is None and n.right is None and s == k:
         return True
 
@@ -17,7 +17,7 @@ def pathSum(n, s, k):
 def pathSumAlt(n, s):
     if n is None:
         return False
-    s -= n.value
+    s -= n.val
     if n.left is None and n.right is None and s == 0:
         return True
 
