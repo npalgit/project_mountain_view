@@ -1,4 +1,8 @@
-array/longestNonRepeatingSubstring.py
-array/threeSum.py
-array/medianTwoSortedArray.py
-misc/palinNum.py
+array/longestNonRepeatingSubstring.py:15:REDO for better practice.
+array/medianTwoSortedArray.py:18:REDO this problem
+array/threeSums.py:16:REDO defintily
+dynamicProgramming/regxMatching.py:21:REDO- dp is a little bit complicated with details, this is really a difficult one
+linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
+linkedList/rotateList.py:10:REDO: clever solution
+misc/generateParentheses.py:15:REDO - really good question
+misc/palinNum.py:9:REDO

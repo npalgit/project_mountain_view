@@ -7,7 +7,6 @@ You should preserve the original relative order of the nodes in each of the two 
 For example,
 Given 1->4->3->2->5->2 and x = 3,
 return 1->2->2->4->3->5.
-
 leetcode #86
 """
 from ListNode import ListNode
@@ -19,7 +18,6 @@ def partitionList(n, x):
     t_n = t
 
     while(n):
-        print(n.val)
         if n.val < x:
             h_n.next = n
             h_n = h_n.next
@@ -30,6 +28,7 @@ def partitionList(n, x):
         n = n.next
 
     h_n.next = t.next
+
     t_n.next = None
     return h.next
 
