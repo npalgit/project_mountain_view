@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-The set [1,2,3,…,n] contains a total of n! unique permutations.
+The set [1,2,3,...,n] contains a total of n! unique permutations.
 By listing and labeling all of the permutations in order,
 We get the following sequence (ie, for n = 3):
 
@@ -24,7 +24,7 @@ def permSeq(n, k):
     rslt = ''
     for i in range(1, n):
         idx = k/facs[n-i]
-        k = k-idx*facs[n-i]
+        k = k%facs[n-i] # alt: k = k-idx*facs[n-i]
         rslt += str(l[idx])
         del l[idx]
 
