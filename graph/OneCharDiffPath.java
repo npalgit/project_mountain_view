@@ -8,7 +8,7 @@ import java.util.*;
  * dict1= 'aaa\n abb\n bbb\n aba\n acc\n abc\n ccc \n aad'
  * output: ['aaa', 'aba', 'abc']
  */
-class OneCharDiffPath {
+public class OneCharDiffPath {
   public static void main(String[] args) {
 
     ArrayList<String> dict = new ArrayList<String>();
