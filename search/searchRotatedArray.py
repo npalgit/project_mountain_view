@@ -5,7 +5,7 @@ Suppose an array sorted in ascending order is rotated at some pivot unknown to y
 You are given a target value to search. If found in the array return its index, otherwise return -1.
 You may assume no duplicate exists in the array.
 leetcode #33
-REDO: maybe, got it first try. Do it both iteratively, smartly solution.
+REDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
 """
 def searchInSortedArraySmart(l, k):
     beg, end = 0, len(l)
@@ -29,6 +29,29 @@ def searchInSortedArraySmart(l, k):
             end = mid
 
     return -1
+
+def searchInSorted2ndBest(nums, targ):
+    """
+    becareful with the indices
+    """
+    if not nums: return -1
+    beg, end = 0, len(nums)-1
+
+    while beg < end:
+        mid = beg + (end-beg)/2
+        if targ == nums[mid]: return mid
+        if nums[beg] <= nums[mid]:
+            if nums[beg] <= targ and targ < nums[mid]:
+                end = mid - 1
+            else:
+                beg = mid + 1
+        else:
+            if nums[mid] < targ and targ <= nums[end]:
+                beg = mid + 1
+            else:
+                end = mid-1
+
+    return beg if nums[beg] == targ else -1
 
 def searchInSortedArrayIterative(l, k):
     beg, end = 0, len(l)-1
@@ -100,42 +123,56 @@ def test1():
     l = [4, 5, 6, 7, 0, 1, 2]
     print(l)
     print(searchInSortedArraySmart(l, 5))
-    print(searchInSortedArrayIterative(l, 5))
+    print(searchInSorted2ndBest(l, 5))
     print('--------------------')
 
 def test2():
     l = [6, 7, 0, 1, 2, 3, 4]
     print(l)
     print(searchInSortedArraySmart(l, 2))
-    print(searchInSortedArrayIterative(l, 2))
+    print(searchInSorted2ndBest(l, 2))
     print('--------------------')
 
 def test3():
     l = [2, 3, 4, 6, 7, 8, 0, 1]
     print(l)
     print(searchInSortedArraySmart(l, 0))
-    print(searchInSortedArrayIterative(l, 0))
+    print(searchInSorted2ndBest(l, 0))
     print('--------------------')
 
 def test4():
     l = [1, 2, 3, 4, 5, 0]
     print(l)
     print(searchInSortedArraySmart(l, 0))
-    print(searchInSortedArrayIterative(l, 0))
+    print(searchInSorted2ndBest(l, 0))
     print('--------------------')
 
 def test5():
     l = [8, 0, 1, 2, 3, 4, 5]
     print(l)
     print(searchInSortedArraySmart(l, 2))
-    print(searchInSortedArrayIterative(l, 2))
+    print(searchInSorted2ndBest(l, 2))
     print('--------------------')
 
 def test6():
     l = [0, 1, 2, 3, 4, 5]
     print(l)
     print(searchInSortedArraySmart(l, 3))
-    print(searchInSortedArrayIterative(l, 3))
+    print(searchInSorted2ndBest(l, 3))
+    print('--------------------')
+
+def test7():
+    l = [5,1,3]
+    print(l)
+    print(searchInSortedArraySmart(l, 5))
+    print(searchInSorted2ndBest(l, 5))
+    print('--------------------')
+
+def test8():
+    l = []
+    print(l)
+    print(searchInSortedArraySmart(l, 5))
+    print(searchInSorted2ndBest(l, 5))
     print('--------------------')
 
 if __name__ == "__main__":
@@ -145,4 +182,5 @@ if __name__ == "__main__":
     test4()
     test5()
     test6()
-
+    test7()
+    test8()

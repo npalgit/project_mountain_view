@@ -1,8 +1,59 @@
+array/addBin.py:15:REDO: do it recursively
+array/bestTimeToBuySellStock.py:16:REDO: didn't figure out the trick right away. should do this very fast
+array/bestTimeToBuySellStockMultiple.py:12:REDO: figure out the rule fast
+array/firstMissingPos.py:11:REDO: need to figure out the trick first try. the corner cases on annoying.
+array/fourSums.py:16:REDO. even tho got this on the first try, after doing 3Sum, avoid duplicates annoying
+array/gasStation.py:12:REDO: need to find the pattern. I don't like this question that much. need to solve with no hints
+array/jumpGame.py:12:REDO: maybe not top priority, its like the max subarray problem. Do it without looking at the solution.
 array/longestNonRepeatingSubstring.py:15:REDO for better practice.
+array/majorityElements.py:9:REDO: moore's majority algo
+array/maxProductSubArray.py:9:REDO
 array/medianTwoSortedArray.py:18:REDO this problem
+array/nextPerm.py:78:REDO: smart algo
+array/removeDuplicatesTwo.py:12:REDO: same principle applies to remove 3 or 4
+array/removeElement.py:13:REDO: do it fast in the most efficient solution. And fix removeElement2
+array/sortColors.py:11:REDO: many different algorithms. a few more than these. Do this without looking at sol. also dutch national flag. Four way partition?
 array/threeSums.py:16:REDO defintily
+array/threeSumsClosest.py:10:REDO, and also all the sums. And various solutions.
+backtracking/combinations.py:19:REDO: this as a series of backtracking
+backtracking/comboSum.py:4:REDO: good question to redo. DP is actually slower. Also redo backtracking
+backtracking/comboSumDup.py:20:REDO: good structure for backtracking. redo with dp
+backtracking/nQueens.py:5:REDO: the backtrack solution.
+backtracking/palindromePartition.py:15:REDO: go over all the backtracking problems
+backtracking/permutationDup.py:13:REDO: figure out the correct condition
+backtracking/sudokuSolver.py:7:REDO: good quesiton to get re-acquinted with. did not struggle too much.
 dynamicProgramming/regxMatching.py:21:REDO- dp is a little bit complicated with details, this is really a difficult one
+graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
+graph/wordSearch.py:27:REDO: need to figure out the correct approach first
+linkedList/linkedlistjoint.py:13:REDO: the short code
 linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
+linkedList/reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
 linkedList/rotateList.py:10:REDO: clever solution
+misc/candy.py:11:REDO
+misc/divideTwoInts.py:8:REDO: sol very efficient way of dividing.
+misc/factorialTrailingZeros.py:7:REDO
 misc/generateParentheses.py:15:REDO - really good question
+misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
 misc/palinNum.py:9:REDO
+misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
+misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
+misc/sqrt.py:6:REDO: many smart solutions, try newton method optional
+search/findMinInSortedArray.py:12:REDO: need to figure this out fast with no hint
+search/searchInsertPosition.py:14:REDO: Do it in log(n) different binary search methods.
+search/searchRange.py:15:REDO: this is based on insert pos. good question
+search/searchRotatedArray.py:8:REDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
+search/searchRotatedArrayDuplicates.py:9:REDO: need to figure out the sol on your own this along with #33
+stack/largestHistogram.py:12:REDO: related to 42, make sure can do both solutions and know the difference
+stack/minStack.py:19:REDO: figure out how to keep min for all stack
+stack/simplyfyPath.py:10:REDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution
+stack/trappingWater.py:9:REDO: really proud, solved this myself. But redo for review
+trees/bstIterator.py:11:REDO: must know
+trees/buildTreePreInorder.py:5:REDO: can't find the trick right away. Very smart solution
+trees/buildUniqueBST.py:14:REDO: must know
+trees/inOrderTrav.py:5:REDO iterative.
+trees/linkedlistToBST.py:6:REDO: got O(nlogn) right away. review with O(n). Also notice pointer doesn't work in python
+trees/nextRightPointer.py:19:REDO: quickly the iterative, sol with O(1) space.
+trees/nextRightPointerAnyTree.py:24:REDO: tricky algo.
+trees/sumRoot2LeafNumbers.py:19:REDO: Do this fast, review. Got this after seeing the interesting algorithm
+trees/treeToLinkedList.py:26:REDO: smart solution
+trees/zigZagTraverse.py:20:REDO: make sure can do this first try. should be fast
