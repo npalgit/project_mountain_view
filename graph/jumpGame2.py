@@ -12,7 +12,7 @@ Given array A = [2,3,1,1,4]
 The minimum number of jumps to reach the last index is 2. 
 (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
 #45
-REDO: go over bfs no need to code everything. Maybe code space efficent BFS
+REDO: go over bfs solution.
 """
 def jumpG(nums):
     """
@@ -31,18 +31,6 @@ def jumpG(nums):
         dp[i] = min_jp + 1
 
     return dp[0]
-
-def jumpGBFS(nums):
-    end = len(nums)-1
-    lvls = [0]*len(nums)
-
-    for i in range(len(nums)-1):
-        if i+nums[i] >= end:
-            return lvls[i] + 1
-        for i_lvl in range(1, nums[i]+1):
-            if i+i_lvl < len(nums):
-                lvls[i+i_lvl] = lvls[i] + 1
-    return 0
 
 def jumpGBFSSpaceEffic(nums):
     n_len, start, end = len(nums), 0, 0
@@ -100,6 +88,13 @@ def test6():
     print(jumpGBFSSpaceEffic(nums))
     print('--------------')
 
+def test7():
+    nums = [1, 2, 1, 1, 1]
+    print(jumpG(nums))
+    print(jumpGBFS(nums))
+    print(jumpGBFSSpaceEffic(nums))
+    print('--------------')
+
 if __name__ == '__main__':
     test1()
     test2()
@@ -107,3 +102,4 @@ if __name__ == '__main__':
     test4()
     test5()
     test6()
+    test7()
