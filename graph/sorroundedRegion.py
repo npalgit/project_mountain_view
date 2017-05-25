@@ -15,6 +15,7 @@ X X X X
 X X X X
 X O X X
 #130
+REDO: classic question no need to recode, be familiar with it
 """
 from collections import deque
 
