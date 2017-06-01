@@ -9,9 +9,12 @@ array/longestNonRepeatingSubstring.py:15:REDO for better practice.
 array/majorityElements.py:9:REDO: moore's majority algo
 array/maxProductSubArray.py:9:REDO
 array/medianTwoSortedArray.py:18:REDO this problem
+array/minSubarraySum.py:14:REDO: optional, look up O(nlog(n)) solution.
+array/minWindowSubstr.py:18:REDO: must get slide window first try
 array/nextPerm.py:78:REDO: smart algo
 array/removeDuplicatesTwo.py:12:REDO: same principle applies to remove 3 or 4
 array/removeElement.py:13:REDO: do it fast in the most efficient solution. And fix removeElement2
+array/slidingMaxWin.py:21:REDO: good use of deque
 array/sortColors.py:11:REDO: many different algorithms. a few more than these. Do this without looking at sol. also dutch national flag. Four way partition?
 array/threeSums.py:16:REDO defintily
 array/threeSumsClosest.py:10:REDO, and also all the sums. And various solutions.
@@ -24,6 +27,7 @@ backtracking/permutationDup.py:13:REDO: figure out the correct condition
 backtracking/sudokuSolver.py:7:REDO: good quesiton to get re-acquinted with. did not struggle too much.
 dynamicProgramming/regxMatching.py:21:REDO- dp is a little bit complicated with details, this is really a difficult one
 graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
+graph/jumpGame2.py:15:REDO: go over bfs no need to code everything. Maybe code space efficent BFS
 graph/wordSearch.py:27:REDO: need to figure out the correct approach first
 linkedList/linkedlistjoint.py:13:REDO: the short code
 linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
@@ -34,9 +38,11 @@ misc/divideTwoInts.py:8:REDO: sol very efficient way of dividing.
 misc/factorialTrailingZeros.py:7:REDO
 misc/generateParentheses.py:15:REDO - really good question
 misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
+misc/longestValidParentheses.py:11:REDO: everything. very tricky
 misc/palinNum.py:9:REDO
 misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
 misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
+misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
 misc/sqrt.py:6:REDO: many smart solutions, try newton method optional
 search/findMinInSortedArray.py:12:REDO: need to figure this out fast with no hint
 search/searchInsertPosition.py:14:REDO: Do it in log(n) different binary search methods.
@@ -50,6 +56,7 @@ stack/trappingWater.py:9:REDO: really proud, solved this myself. But redo for re
 trees/bstIterator.py:11:REDO: must know
 trees/buildTreePreInorder.py:5:REDO: can't find the trick right away. Very smart solution
 trees/buildUniqueBST.py:14:REDO: must know
+trees/countUniqueBST.py:15:REDO: figured out self with hints. must know
 trees/inOrderTrav.py:5:REDO iterative.
 trees/linkedlistToBST.py:6:REDO: got O(nlogn) right away. review with O(n). Also notice pointer doesn't work in python
 trees/nextRightPointer.py:19:REDO: quickly the iterative, sol with O(1) space.
