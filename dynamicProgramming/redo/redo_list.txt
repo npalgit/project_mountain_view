@@ -1,0 +1,9 @@
+distinctSubsequence.py:12:REDO: and similar ones
+editDistance.py:12:REDO
+lis.py:13:#REDO: binary search algorithm
+maximalRectangle.py:14:REDO: know how to do maxHistogram first. Then just read over the solution. no need to code everything.
+regxMatching.py:21:REDO- dp is a little bit complicated with details, this is really a difficult one
+shortestPalinPartition.py:10:REDO: review both solutions, optionally coding them.
+wildCardMatching.py:5:REDO: quick for practice. notice the special case invovles preprocessing.
+
+# 7/20 redo

@@ -16,15 +16,15 @@ larger than buying price
 REDDO: didn't figure out the trick right away. should do this very fast
 """
 def bestTimeToBuySell(nums):
-    int_max = 0x7fffffff
-    min_v = int_max
-    max_profit = 0
+    min_v = nums[0]
+    max_prof = 0
+    for i in nums:
+        if i < min_v:
+            min_v = i
+        # else: # is optional.
+        max_prof = max(max_prof, i-min_v)
 
-    for item in nums:
-        if item < min_v: min_v = item
-        elif item - min_v > max_profit: max_profit = item - min_v
-
-    return max_profit
+    return max_prof
 
 def test1():
     nums = [7, 1, 5, 3, 6, 4]

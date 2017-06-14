@@ -1,0 +1,8 @@
+copyRandomPointer.py:8:REDO: interesting algorithm
+findNodeCycle.py:7:REDO: being able to solve the math part on your own
+linkedlistjoint.py:13:REDO: the short code
+mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
+reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
+rotateList.py:10:REDO: clever solution
+
+# 6/20 redo

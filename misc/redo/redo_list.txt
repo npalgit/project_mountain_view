@@ -1,0 +1,20 @@
+candy.py:11:REDO
+divideTwoInts.py:8:REDO: sol very efficient way of dividing.
+factorialTrailingZeros.py:7:REDO
+fractionToDecimal.py:16:REDO: very good question to redo without any help
+generateParentheses.py:15:REDO - really good question
+groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
+insertIntervals.py:15:#REDO: remember try not to do it in place
+largestNumbers.py:10:REDO: quickly briefly know how to implement
+longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
+longestValidParentheses.py:11:REDO: everything. very tricky
+lru_cache.py:6:REDO: review the trick, as it is a common interview question.
+maxGap.py:12:REDO:Trick here is radix sort
+palinNum.py:9:REDO
+permutationSequence.py:17:REDO: smart algorithm and index manipulation
+pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
+scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
+skyline.py:7:REDO
+sqrt.py:6:REDO: many smart solutions, try newton method optional
+
+# 18/35

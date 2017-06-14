@@ -13,25 +13,23 @@ REDDO: figure out the rule fast
 """
 def bestTimeToBuySellMultiple(nums):
     max_prof = 0
-    i = 0
-    while i+1 < len(nums):
-        # find valley
-        while i+1 < len(nums) and nums[i] >= nums[i+1]:
-            i += 1
-        valley = nums[i]
-
-        # find peak
-        while i+1 < len(nums) and nums[i] <= nums[i+1]:
-            i += 1
-        peak = nums[i]
-        max_prof += peak - valley
+    local_min = nums[0]
+    local_max = nums[0]
+    for i in range(1, len(nums)):
+        if nums[i] < nums[i-1]:
+            local_min = nums[i]
+        #elif nums[i] > nums[i-1]:
+        local_max = nums[i]
+        max_prof = max(max_prof, local_max-local_min)
 
     return max_prof
 
 def bestTimeToBuySellMultipleSimple(nums):
     max_prof = 0
     for i in range(1, len(nums)):
-        if nums[i] > nums[i-1]: max_prof += nums[i] - nums[i-1]
+        if nums[i] > nums[i-1]:
+            max_prof += nums[i]-nums[i-1]
+
     return max_prof
 
 def test1():
