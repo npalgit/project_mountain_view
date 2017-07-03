@@ -12,7 +12,7 @@ Return
   ["a","a","b"]
 ]
 #131
-REDO: go over all the backtracking problems
+REDDO: go over all the backtracking problems
 """
 def palinPart(s):
     """
@@ -33,6 +33,25 @@ def dfs(lists, l, s, start):
         dfs(lists, l, s, i+1)
         l.pop()
 
+def palinPart_r(s):
+    res = []
+    trace = []
+    dfs_r(s, 0, trace, res)
+    return res
+
+def dfs_r(s, i, trace, res):
+
+    if i == len(s):
+        res.append(list(trace))
+        return
+
+    for h in range(i, len(s)):
+        l = i
+        if isPalin(s[l:h+1]):
+            trace.append(s[l:h+1])
+            dfs_r(s, h+1, trace, res)
+            trace.pop()
+
 def isPalinOneLiner(s):
     """
     Alternative implementation of is palin for reference only
@@ -52,11 +71,22 @@ def isPalin(s):
 def test1():
     s = 'aab'
     print(palinPart(s))
+    print(palinPart_r(s))
+    print('--------------')
 
 def test2():
     s = 'aaab'
     print(palinPart(s))
+    print(palinPart_r(s))
+    print('--------------')
+
+def test3():
+    s = 'aabaac'
+    print(palinPart(s))
+    print(palinPart_r(s))
+    print('--------------')
 
 if __name__ == '__main__':
     test1()
     test2()
+    test3()

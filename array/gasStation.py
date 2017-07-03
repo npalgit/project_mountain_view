@@ -9,7 +9,7 @@ Return the starting gas station's index if you can travel around the circuit onc
 otherwise return -1.
 
 #134
-REDO: need to find the pattern. I don't like this question that much. need to solve with no hints
+REDDO: need to find the pattern. I don't like this question that much. need to solve with no hints
 """
 
 def calculategs(g, c):

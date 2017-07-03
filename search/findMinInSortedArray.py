@@ -9,7 +9,7 @@ Find the minimum element.
 You may assume no duplicate exists in the array.
 
 #153
-REDO: need to figure this out fast with no hint
+REDDO: need to figure this out fast with no hint
 """
 def findMin(nums):
     beg, end = 0, len(nums)-1
@@ -22,6 +22,19 @@ def findMin(nums):
             beg = mid +1
         else:
             end = mid
+
+    return nums[beg]
+
+def findMin_r(nums):
+    beg, end = 0, len(nums)-1
+    if nums[beg] < nums[end]: return nums[beg]
+    while beg < end:
+        mid = beg + (end-beg)/2
+
+        if nums[0] > nums[mid]:
+            end = mid
+        else:
+            beg = mid+1
 
     return nums[beg]
 

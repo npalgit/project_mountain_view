@@ -8,7 +8,7 @@ Here, we will use the integers 0, 1, and 2 to represent the color red, white,
 and blue respectively.
 
 #75
-REDO: many different algorithms. a few more than these. Do this without looking at sol. also dutch national flag. Four way partition?
+REDDO: many different algorithms. a few more than these. Do this without looking at sol. also dutch national flag. Four way partition?
 """
 def sortColors(nums):
     """

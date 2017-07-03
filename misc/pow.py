@@ -3,7 +3,7 @@
 Implement pow(x, n). x is float, n is int
 
 #50
-REDO: good to redo, to know how to implement with closed eyes.
+REDDO: good to redo, to know how to implement with closed eyes.
 """
 def pow(x, n):
     """

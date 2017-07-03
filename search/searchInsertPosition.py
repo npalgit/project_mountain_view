@@ -11,7 +11,7 @@ Here are few examples.
 [1,3,5,6], 0 -> 0
 
 leetcode #35
-REDO: Do it in log(n) different binary search methods.
+REDDO: Do it in log(n) different binary search methods.
 """
 def searchInsertPos1(l, k):
     beg, end = 0, len(l)-1

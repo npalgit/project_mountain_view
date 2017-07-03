@@ -12,8 +12,9 @@ For example, you may serialize the following tree
 as "[1,2,3,null,null,4,5]", just the same as how LeetCode OJ serializes a binary tree. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
 
 #297
-REDO: Got this first try on my own. try to redo to practice different order traversal and iterative as tree exercises.
+REDDO: Got this first try on my own. try to redo to practice different order traversal and iterative as tree exercises.
 """
+from collections import deque
 class Codec:
     def __init__(self):
         self.s = ''
@@ -63,6 +64,110 @@ class Codec:
         self.dfs_ser(n.left)
         self.dfs_ser(n.right)
 
+    # --------------  redo pre-order ---------------------
+    def serialize_r(self, root):
+        """Encodes a tree to a single string.
+
+        :type root: TreeNode
+        :rtype: str
+        """
+        n = root
+
+        if not n: return ';'
+        s = str(n.val)
+        s = s + ',' + self.serialize_r(n.left)
+        s = s + ',' + self.serialize_r(n.right)
+        return s
+
+
+    def deserialize_r(self, data):
+        """Decodes your encoded data to tree.
+
+        :type data: str
+        :rtype: TreeNode
+        """
+        data_l = data.split(',')
+        return self.dfs_deser_r(data_l)
+
+    def dfs_deser_r(self, data_l):
+        d = data_l[0]
+        data_l.remove(d)
+        if d == ';': return
+
+        n = TreeNode(d)
+        n.left = self.dfs_deser_r(data_l)
+        n.right = self.dfs_deser_r(data_l)
+
+        return n
+    # -------------- end redo pre-order ---------------------
+
+    # --------------  redo level-order ---------------------
+    def serialize_level_r(self, root):
+        """Encodes a tree to a single string.
+
+        :type root: TreeNode
+        :rtype: str
+        """
+        if not root: return
+        q = deque()
+        s = ''
+        s += str(root.val)
+
+        q.append(root)
+        while q:
+            n = q.popleft()
+            s += ','
+
+            if n.left:
+                q.append(n.left)
+                s += str(n.left.val)
+            else:
+                s += 'n'
+
+            s += ','
+            if n.right:
+                q.append(n.right)
+                s += str(n.right.val)
+            else:
+                s += 'n'
+        return s
+
+    def deserialize_level_r(self, data):
+        """Decodes your encoded data to tree.
+
+        :type data: str
+        :rtype: TreeNode
+        """
+        if not data: return
+        data_l = data.split(',')
+        d = data_l[0]
+        data_l.remove(d)
+        root = TreeNode(d)
+        q = deque()
+        q.append(root)
+
+        while q:
+            n = q.popleft()
+
+            if data_l:
+                left_d = data_l[0]
+                data_l.remove(left_d)
+                if left_d != 'n':
+                    left = TreeNode(left_d)
+                    n.left = left
+                    q.append(left)
+
+            if data_l:
+                right_d = data_l[0]
+                data_l.remove(right_d)
+                if right_d != 'n':
+                    right = TreeNode(right_d)
+                    n.right = right
+                    q.append(right)
+
+        return root
+    # -------------- end redo level-order ---------------------
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -101,9 +206,9 @@ def test1():
     n8.right = n9
 
     codec = Codec()
-    data = codec.serialize(n1)
+    data = codec.serialize_level_r(n1)
     print(data)
-    res = codec.deserialize(data)
+    res = codec.deserialize_level_r(data)
     print(res)
     TreeNode.print_nodes(res)
 

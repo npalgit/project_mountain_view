@@ -3,7 +3,7 @@
 Given a string s1, we may represent it as a binary tree by partitioning
 it to two non-empty substrings recursively.
 #87
-REDO: learn the logic, no necessarily re-write everything
+REDDO: learn the logic, no necessarily re-write everything
 """
 def scrambleString(s1, s2):
     n, m = len(s1), len(s2)

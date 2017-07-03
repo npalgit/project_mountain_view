@@ -16,7 +16,7 @@ If n = 4 and k = 2, a solution is:
 
 #77
 Note: python backtracking TLE
-REDO: this as a series of backtracking
+REDDO: this as a series of backtracking
 """
 def combo(n, k):
     nums = [i for i in range(1, n+1)]
@@ -49,11 +49,34 @@ def dfs2(rslt, start, n, k, l):
         dfs2(rslt, i+1, n, k-1, l)
         l.pop()
 
+def combo_r(n, k):
+    """
+    84.6% no TLE
+    """
+    trace = []
+    res = []
+    dfs_r(n, 1, k, trace, res)
+    return res
+
+def dfs_r(n, i, k, trace, res):
+    if k == 0:
+        res.append(list(trace))
+        return
+
+    for n_i in range(i, n-k+2):
+        trace.append(n_i)
+        dfs_r(n, n_i+1, k-1, trace, res)
+        trace.pop()
+
 def test1():
    print(combo2(4, 2))
+   print(combo_r(4, 2))
+   print('---------------')
 
 def test2():
    print(combo2(20, 16))
+   print(combo_r(20, 16))
+   print('---------------')
 
 if __name__ == '__main__':
     test1()

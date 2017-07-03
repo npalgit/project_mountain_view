@@ -15,9 +15,48 @@ For k = 2, you should return: 2->1->4->3->5
 For k = 3, you should return: 3->2->1->4->5
 
 leetcode #25
-REDO: optionally, do it recursively. Learn how to reverse in one liner.
+REDDO: optionally, do it recursively. Learn how to reverse in one liner.
 """
 from ListNode import ListNode
+
+def revKGroup_r(h, k):
+    count = 0
+    dummy = ListNode(-1)
+    dummy.next = h
+    n = dummy
+    head = dummy
+
+    while head:
+        tail = head.next
+        n = tail
+
+        while n and count < k:
+            n = n.next
+            count += 1
+
+        if count < k and not n:
+            break
+
+        count = 0
+        stopN = n
+
+        head.next = revK_r(tail, stopN)
+        tail.next = stopN
+        head = tail
+
+    return dummy.next
+
+def revK_r(n, stopN):
+    t = None
+    n_next = None
+
+    while n != stopN:
+        n_next = n.next
+        n.next = t
+        t = n
+        n = n_next
+
+    return t
 
 def revKGrp(root, k):
     """
@@ -105,7 +144,8 @@ def test1():
     n3.next = n4
     n4.next = n5
     n5.next = n6
-    ListNode.print_ll(revKGrp(n1, 2))
+    #ListNode.print_ll(revKGrp(n1, 2))
+    ListNode.print_ll(revKGroup_r(n1, 1))
 
 def test2():
     n1 = ListNode(1)
@@ -130,5 +170,5 @@ def test3():
 
 if __name__ == '__main__':
     test1()
-    test2()
-    test3()
+    #test2()
+    #test3()

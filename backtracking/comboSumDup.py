@@ -17,7 +17,7 @@ A solution set is:
   [1, 1, 6]
 ]
 #40
-REDO: good structure for backtracking. redo with dp
+REDDO: good structure for backtracking. redo with dp
 """
 def comboSumDup(targ, nums):
     """

@@ -7,6 +7,7 @@ You may assume that the array is non-empty and the majority element always exist
 
 #169
 REDO: moore's majority algo
+review: moore's majority algo
 """
 
 def majority(nums):

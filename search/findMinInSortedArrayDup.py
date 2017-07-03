@@ -8,7 +8,7 @@ Find the minimum element.
 
 The array may contain duplicates.
 #154
-REDO
+REDDO
 """
 def findMinInRotatedDup(nums):
     beg, end = 0, len(nums)-1

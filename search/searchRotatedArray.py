@@ -5,7 +5,7 @@ Suppose an array sorted in ascending order is rotated at some pivot unknown to y
 You are given a target value to search. If found in the array return its index, otherwise return -1.
 You may assume no duplicate exists in the array.
 leetcode #33
-REDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
+REDDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
 """
 def searchInSortedArraySmart(l, k):
     beg, end = 0, len(l)
@@ -28,6 +28,30 @@ def searchInSortedArraySmart(l, k):
         else:
             end = mid
 
+    return -1
+
+def searchInSorted_r(nums, targ):
+    """
+    Accepted in redo. Got this first try.
+    """
+    beg, end = 0, len(nums)-1
+
+    while beg <= end:
+        mid = beg + (end-beg)/2
+
+        if nums[mid] == targ:
+            return mid
+
+        if nums[beg] <= nums[mid]:
+            if nums[beg] <= targ and targ < nums[mid]:
+                end = mid-1
+            else:
+                beg = mid+1
+        else:
+            if nums[mid] < targ and targ <= nums[end]:
+                beg = mid+1
+            else:
+                end = mid-1
     return -1
 
 def searchInSorted2ndBest(nums, targ):

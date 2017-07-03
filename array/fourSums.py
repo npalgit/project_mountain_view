@@ -13,7 +13,7 @@ A solution set is:
   [-2,  0, 0, 2]
 ]
 #18
-REDO. even tho got this on the first try, after doing 3Sum, avoid duplicates annoying
+REDDO. even tho got this on the first try, after doing 3Sum, avoid duplicates annoying
 """
 
 def fourS(nums, targ):
@@ -45,20 +45,66 @@ def fourS(nums, targ):
                     end -= 1
     return rslt
 
+def fourSum_r(nums):
+    nums.sort()
+    i0 = 0
+    res = []
+    while i0 < len(nums)-3:
+        threeSum_r(nums, i0, res)
+
+        i0 += 1
+        while i0 < len(nums)-3 and nums[i0-1] == nums[i0]:
+            i0 += 1
+    return res
+
+def threeSum_r(nums, i0, res):
+    c = i0+1
+    while c < len(nums)-2:
+        imm_t = -nums[i0]-nums[c]
+        l = c + 1
+        h = len(nums)-1
+        while l < h:
+            if nums[l] + nums[h] == imm_t:
+                res.append([nums[i0], nums[c], nums[l], nums[h]])
+                l += 1
+                h -= 1
+                while l < h and nums[l-1] == nums[l]:
+                    l += 1
+                while l < h and nums[h+1] == nums[h]:
+                    h -= 1
+
+            elif nums[l] + nums[h] < imm_t:
+                l += 1
+            else:
+                h -= 1
+
+        c += 1
+        while c < len(nums) and nums[c-1] == nums[c]:
+            c += 1
+
 def test1():
    nums = [1, 0, -1, 0, -2, 2]
    print(fourS(nums, 0))
+   nums = [1, 0, -1, 0, -2, 2]
+   print(fourSum_r(nums))
+   print('----------------')
 
 def test2():
     nums = [-3,-2,-1,0,0,0,1,2,3]
     print(fourS(nums, 0))
+    nums = [-3,-2,-1,0,0,0,1,2,3]
+    print(fourSum_r(nums))
+    print('----------------')
 
 def test3():
     nums = [-1,2,2,-5,0,-1,4]
-    print(fourS(nums, 3))
+    print(fourS(nums, 0))
+    nums = [-1,2,2,-5,0,-1,4]
+    print(fourSum_r(nums))
+    print('----------------')
     # rslt: [[-5,2,2,4],[-1,0,2,2]]
 
 if __name__ == '__main__':
-    #test1()
-    #test2()
+    test1()
+    test2()
     test3()

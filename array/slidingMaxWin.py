@@ -18,7 +18,7 @@ Window position                Max
 Therefore, return the max sliding window as [3,3,5,5,6,7].
 
 #239
-REDO: good use of deque
+REDDO: good use of deque
 """
 from collections import deque
 
@@ -39,15 +39,35 @@ def maxslidingWin(nums, k):
 
     return rslt
 
+def maxslidingWin_r(nums, k):
+    dq = deque()
+    if not nums: return []
+    res = []
+
+    for i in range(len(nums)):
+        if dq and dq[0] < i-k+1:
+            dq.popleft()
+
+        while dq and nums[i] > nums[dq[-1]]:
+            dq.pop()
+
+        dq.append(i)
+        if i-k+1 >= 0:
+            res.append(nums[dq[0]])
+
+    return res
+
 def test1():
     nums = [1,3,-1,-3,5,3,6,7]
     k = 3
     print(maxslidingWin(nums, k))
+    print(maxslidingWin_r(nums, k))
 
 def test2():
-     nums = [7,2,4]
-     k = 2
-     print(maxslidingWin(nums, 2))
+    nums = [7,2,4]
+    k = 2
+    print(maxslidingWin(nums, 2))
+    print(maxslidingWin_r(nums, k))
 
 if __name__ == '__main__':
     test1()

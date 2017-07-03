@@ -3,7 +3,7 @@
 Implement int sqrt(int x).
 Compute and return the square root of x
 leetcode #69
-REDO: many smart solutions, try newton method optional
+REDDO: many smart solutions, try newton method optional
 """
 def sqrt(n):
     """

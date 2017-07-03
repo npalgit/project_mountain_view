@@ -12,7 +12,7 @@ Given [5, 7, 7, 8, 8, 10] and target value 8,
 return [3, 4].
 
 leetcode#34
-REDO: this is based on insert pos. good question
+REDDO: this is based on insert pos. good question
 """
 def searchRange(l, k):
     def search(l, k):

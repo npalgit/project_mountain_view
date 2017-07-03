@@ -19,7 +19,7 @@ Given target = 5, return true.
 
 Given target = 20, return false.
 #240
-REDO: learn the trick
+REDDO: learn the trick
 """
 def search(mtx, targ):
     row, col = 0, len(mtx[0])-1

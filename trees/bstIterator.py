@@ -8,7 +8,7 @@ Note: next() and hasNext() should run in average O(1) time and uses O(h) memory,
 
 #173
 
-REDO: must know
+REDDO: must know
 """
 
 from btNode import BTNode

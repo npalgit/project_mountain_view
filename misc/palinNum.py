@@ -1,12 +1,10 @@
 #!/usr/bin/python
 """
-Palindrome Number   Add to List QuestionEditorial Solution  My Submissions
-Total Accepted: 174888
-Total Submissions: 512928
+Palindrome Number
 Determine whether an integer is a palindrome. Do this without extra space.
 
 #leetcode #9
-REDO
+REDDO
 """
 def isPalindrome(x):
     if x < 0 or (x != 0 and x%10 == 0):

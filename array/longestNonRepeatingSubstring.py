@@ -12,7 +12,8 @@ Examples:
     Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
 leetcode #3
-REDO for better practice.
+REDDO for better practice.
+review, trick is max(.., i)
 """
 
 def longestNonRepeatingSubstring(str):
@@ -27,6 +28,7 @@ def longestNonRepeatingSubstring(str):
     for j in xrange(len(str)):
         v = str[j]
         if v in dic:
+            # use max, see corner case abba
             i = max(dic[v] + 1, i)
 
         tmp = j-i+1

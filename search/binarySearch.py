@@ -12,6 +12,16 @@ def binSearch(nums, b, e, k):
             b = mid+1
     return b
 
+def binSearch(nums):
+     beg, end = 0, len(nums)
+     while beg < end:
+         mid = beg + (end-beg)/2
+         if nums[mid] < target:
+             beg = mid+1
+         else:
+             end = mid
+     return beg
+
 def test1():
     nums = [2, 3, 4, 8, 9, 10]
     print(binSearch(nums, 0, len(nums), 7))

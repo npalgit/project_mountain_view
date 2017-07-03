@@ -1,7 +1,19 @@
 #!/usr/bin/python
 """
+Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.  
+The same repeated number may be chosen from C unlimited number of times.
+
+Note:
+All numbers (including target) will be positive integers.
+The solution set must not contain duplicate combinations.
+For example, given candidate set [2, 3, 6, 7] and target 7, 
+A solution set is: 
+[
+  [7],
+  [2, 2, 3]
+]
 #39
-REDO: good question to redo. DP is actually slower. Also redo backtracking
+REDDO: good question to redo. DP is actually slower. Also redo backtracking
 """
 ml = []
 def comboSum(t, d, r):
@@ -34,6 +46,31 @@ def dfs(t, i, path, cand, rslt):
 
     for idx, itm in enumerate(cand[i:], start=i):
         dfs(t-itm, idx, path+[itm], cand, rslt)
+
+def comboSum_r(sum, nums):
+    res = []
+    trace = []
+    nums.sort() # need for ln 68 - 71
+    dfs_r(nums, 0, trace, 0, sum, res)
+
+    return res
+
+def dfs_r(nums, i, trace, partial_sum, sum, res):
+    if partial_sum >= sum:
+        if partial_sum == sum: res.append(list(trace))
+        return
+
+    for n_i in range(i, len(nums)):
+        trace.append(nums[n_i])
+        partial_sum += nums[n_i]
+        dfs_r(nums, n_i, trace, partial_sum, sum, res)
+
+        # for this to work you need to sort the input array
+        if partial_sum >= sum:
+            trace.pop()
+            break
+        partial_sum -= nums[n_i]
+        trace.pop()
 
 def comboSum_dp(t, d):
     """
@@ -82,7 +119,7 @@ def comboSum_dp2(t, d):
                             temp_l.append(c_val)
                             i_l.append(temp_l)
         rslt.append(i_l)
-    
+
     return rslt[-1]
 
 
@@ -94,6 +131,7 @@ def test1():
     #print(ml)
     print(comboSum_dp2(t, d))
     print(comboSum_bt(t, d))
+    print(comboSum_r(t, d))
     print('----------------')
 
 def test2():
@@ -104,6 +142,7 @@ def test2():
     #print(ml)
     print(comboSum_dp2(t, d))
     print(comboSum_bt(t, d))
+    print(comboSum_r(t, d))
     print('----------------')
 
 def test3():
@@ -111,6 +150,7 @@ def test3():
     d = [1, 2]
     print(comboSum_dp2(t, d))
     print(comboSum_bt(t, d))
+    print(comboSum_r(t, d))
     print('----------------')
 
 def test4():
@@ -118,6 +158,7 @@ def test4():
     d = [8, 4, 3, 7]
     print(comboSum_dp2(t, d))
     print(comboSum_bt(t, d))
+    print(comboSum_r(t, d))
     print('----------------')
 
 def test5():
@@ -125,6 +166,15 @@ def test5():
     d = [8, 2]
     print(comboSum_dp2(t, d))
     print(comboSum_bt(t, d))
+    print(comboSum_r(t, d))
+    print('----------------')
+
+def test6():
+    t = 11
+    d = [8, 7, 4, 3]
+    print(comboSum_dp2(t, d))
+    print(comboSum_bt(t, d))
+    print(comboSum_r(t, d))
     print('----------------')
 
 if __name__ == '__main__':
@@ -133,3 +183,4 @@ if __name__ == '__main__':
     test3()
     test4()
     test5()
+    test6()

@@ -2,9 +2,46 @@
 """
 The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
 #51
-REDO: the backtrack solution.
+REDDO: the backtrack solution.
 """
 from collections import OrderedDict
+
+def solveNQueens_r(self, n):
+    """
+    :type n: int
+    :rtype: List[List[str]]
+    """
+    res = []
+    trace = []
+    xy_sum = set()
+    xy_diff = set()
+    dfs_r(xy_sum, xy_diff, trace, res, n)
+
+    return [['.'*el + 'Q' +'.'*(n-el-1) for el in sol] for sol in res]
+
+def on_path(xy_sum, xy_diff, x, y):
+    if y-x in xy_diff or x+y in xy_sum:
+        return True
+
+    return False
+
+def dfs_r(xy_sum, xy_diff, trace, res, n):
+    if len(trace) == n:
+        res.append(list(trace))
+        return
+
+    for x in range(n):
+        y = len(trace)+1
+        if x in trace or on_path(xy_sum, xy_diff, x, y): continue
+
+        xy_sum.add(x+y)
+        xy_diff.add(y-x)
+        trace.append(x)
+        dfs_r(xy_sum, xy_diff, trace, res, n)
+        trace.pop()
+        xy_sum.remove(x+y)
+        xy_diff.remove(y-x)
+
 def nQs(n):
     """
     Using OrderedDict is acutally much slower than pure list. This yields 9%

@@ -6,7 +6,7 @@ What if duplicates are allowed?
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 
 #81
-REDO: need to figure out the sol on your own this along with #33
+REDDO: need to figure out the sol on your own this along with #33
 """
 
 def searchInSorted2ndBest(nums, targ):
@@ -16,7 +16,7 @@ def searchInSorted2ndBest(nums, targ):
     while beg < end:
         mid = beg + (end-beg)/2
         if targ == nums[mid]: return True
-
+        # or: while beg < end and nums[beg] == nums[end]:
         if nums[beg] == nums[mid] and nums[mid] == nums[end]:
             beg += 1
             end -=1

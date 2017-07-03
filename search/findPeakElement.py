@@ -9,7 +9,7 @@ You may imagine that num[-1] = num[n] = -oo
 
 For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
 #162
-#REDO: this and all similar bin search problem
+#REDDO: this and all similar bin search problem
 """
 def findPeak(nums):
     beg, end = 0, len(nums)-1
@@ -35,6 +35,21 @@ def findPeak2(nums):
             return mid
 
         if nums[mid+1] > nums[mid]:
+            beg = mid+1
+        else:
+            end = mid-1
+
+    return beg
+
+def findPeak_r(nums):
+    beg, end = 0, len(nums)-1
+
+    while beg < end:
+        mid = beg + (end-beg)/2
+
+        if mid-1 >= 0 and nums[mid] > nums[mid-1] and nums[mid] > nums[mid+1]:
+            return mid
+        elif nums[mid+1] > nums[mid]:
             beg = mid+1
         else:
             end = mid-1

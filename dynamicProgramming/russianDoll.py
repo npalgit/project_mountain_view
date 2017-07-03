@@ -1,4 +1,4 @@
-!/usr/bin/python
+#!/usr/bin/python
 """
 You have a number of envelopes with widths and heights given as a pair of integers (w, h). One envelope can fit into another if and only if both the width and height of one envelope is greater than the width and height of the other envelope.
 
@@ -8,6 +8,7 @@ Example:
 Given envelopes = [[5,4],[6,4],[6,7],[2,3]], 
 y6the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
 #354
+REDO: review the trick if width are the same.
 """
 def russianDoll(envs):
     if not envs: return 0
@@ -22,7 +23,7 @@ def russianDoll(envs):
             dp[max_len] = x
             max_len += 1
         else:
-            idx = binSearch(l_env, 0, max_len, x)
+            idx = binSearch(dp, 0, max_len, x)
             dp[idx] = x
 
     return max_len
@@ -45,5 +46,10 @@ def test1():
     nums = [[5,4],[6,4],[6,7],[2,3]]
     print(russianDoll(nums))
 
+def test2():
+    nums = [[1,2],[2,3],[3,4],[3,5],[4,5],[5,5],[5,6],[6,7],[7,8]]
+    print(russianDoll(nums))
+
 if __name__ == '__main__':
     test1()
+    test2()

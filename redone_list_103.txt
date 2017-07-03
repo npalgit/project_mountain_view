@@ -1,0 +1,50 @@
+total_redo_list_202.txt:1:[done] array/addBin.py:15:REDO: do it recursively
+total_redo_list_202.txt:2:[done] array/firstMissingPos.py:11:REDO: need to figure out the trick first try. the corner cases on annoying.
+total_redo_list_202.txt:4:[done] array/gasStation.py:12:REDO: need to find the pattern. I don't like this question that much. need to solve with no hints
+total_redo_list_202.txt:5:[done] array/jumpGame.py:12:REDO: maybe not top priority, its like the max subarray problem. Do it without looking at the solution.
+total_redo_list_202.txt:6:[done] array/longestNonRepeatingSubstring.py:15:REDO for better practice.
+total_redo_list_202.txt:7:[done] array/majorityElements.py:9:REDO: moore's majority algo
+total_redo_list_202.txt:8:[done] array/maxProductSubArray.py:9:REDO
+total_redo_list_202.txt:9:[done] array/medianTwoSortedArray.py:18:REDO this problem
+total_redo_list_202.txt:10:[done] array/minSubarraySum.py:14:REDO: optional, look up O(nlog(n)) solution.
+total_redo_list_202.txt:11:[done] array/minWindowSubstr.py:18:REDO: must get slide window first try
+total_redo_list_202.txt:12:[done] array/nextPerm.py:78:REDO: smart algo
+total_redo_list_202.txt:13:[done] array/removeDuplicatesTwo.py:12:REDO: same principle applies to remove 3 or 4
+total_redo_list_202.txt:14:[done] array/removeElement.py:13:REDO: do it fast in the most efficient solution. And fix removeElement2
+total_redo_list_202.txt:15:[done] array/rotateArr.py:11:REDO: the method with mod.
+total_redo_list_202.txt:16:[done] array/slidingMaxWin.py:21:REDO: good use of deque
+total_redo_list_202.txt:17:[done] array/sortColors.py:11:REDO: many different algorithms. a few more than these. Do this without looking at sol. also dutch national flag. Four way partition?
+total_redo_list_202.txt:18:[done] array/threeSums.py:16:REDO defintily
+total_redo_list_202.txt:19:[done] array/threeSumsClosest.py:10:REDO, and also all the sums. And various solutions.
+total_redo_list_202.txt:20:[done] backtracking/combinations.py:19:REDO: this as a series of backtracking
+total_redo_list_202.txt:21:[done] backtracking/comboSum.py:4:REDO: good question to redo. DP is actually slower. Also redo backtracking
+total_redo_list_202.txt:22:[done] backtracking/comboSumDup.py:20:REDO: good structure for backtracking. redo with dp
+total_redo_list_202.txt:23:[done] backtracking/nQueens.py:5:REDO: the backtrack solution.
+total_redo_list_202.txt:24:[done] backtracking/palindromePartition.py:15:REDO: go over all the backtracking problems
+total_redo_list_202.txt:25:[done] backtracking/permutationDup.py:13:REDO: figure out the correct condition
+total_redo_list_202.txt:26:[done] backtracking/sudokuSolver.py:7:REDO: good quesiton to get re-acquinted with. did not struggle too much.
+total_redo_list_202.txt:27:[done] backtracking/wordBreak2.py:13:REDO: dfs_mem, bfs_mem, time complexity
+total_redo_list_202.txt:49:[done] linkedList/linkedlistjoint.py:13:REDO: the short code
+total_redo_list_202.txt:50:[done] linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
+total_redo_list_202.txt:51:[done] linkedList/reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
+total_redo_list_202.txt:52:[done] linkedList/rotateList.py:10:REDO: clever solution
+total_redo_list_202.txt:66:[done] misc/palinNum.py:9:REDO
+total_redo_list_202.txt:68:[done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
+total_redo_list_202.txt:69:[done] misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
+total_redo_list_202.txt:71:[done] misc/sqrt.py:6:REDO: many smart solutions, try newton method optional
+total_redo_list_202.txt:72:[done] search/findMinInSortedArray.py:12:REDO: need to figure this out fast with no hint
+total_redo_list_202.txt:73:[done] search/findMinInSortedArrayDup.py:11:REDO
+total_redo_list_202.txt:74:[done] search/findPeakElement.py:12:#REDO: this and all similar bin search problem
+total_redo_list_202.txt:75:[done] search/searchInsertPosition.py:14:REDO: Do it in log(n) different binary search methods.
+total_redo_list_202.txt:76:[done] search/searchMtx2.py:22:REDO: learn the trick
+total_redo_list_202.txt:77:[done] search/searchRange.py:15:REDO: this is based on insert pos. good question
+total_redo_list_202.txt:78:[done] search/searchRotatedArray.py:8:REDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
+total_redo_list_202.txt:79:[done] search/searchRotatedArrayDuplicates.py:9:REDO: need to figure out the sol on your own this along with #33
+total_redo_list_202.txt:86:[done] string/reverseWordsInStr.py:12:REDO: part where clean space happens
+total_redo_list_202.txt:87:[done] trees/bstIterator.py:11:REDO: must know
+total_redo_list_202.txt:91:[done] trees/de_serializeBT.py:15:REDO: Got this first try on my own. try to redo to practice different order traversal and iterative as tree exercises.
+total_redo_list_202.txt:92:[done] trees/inOrderTrav.py:5:REDO iterative.
+total_redo_list_202.txt:93:[done] trees/kthSmallest.py:5:REDO: the other two methods. the current one is great.
+total_redo_list_202.txt:94:[done] trees/linkedlistToBST.py:6:REDO: got O(nlogn) right away. review with O(n). Also notice pointer doesn't work in python
+total_redo_list_202.txt:103:[done] trees/treeToLinkedList.py:26:REDO: smart solution
+total_redo_list_202.txt:104:[done] trees/zigZagTraverse.py:20:REDO: make sure can do this first try. should be fast

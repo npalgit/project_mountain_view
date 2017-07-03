@@ -9,7 +9,7 @@ return "blue is sky the".
 No leading, trailing, or multiple spaces in between words.
 
 #151
-REDO: part where clean space happens
+REDDO: part where clean space happens
 """
 def reverseWinStr(s):
     l = list(s)

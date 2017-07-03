@@ -15,7 +15,8 @@ If there are multiple such windows, you are guaranteed that there will always
 be only one unique minimum window in S.
 
 #76
-REDO: must get slide window first try
+REDDO: must get slide window first try
+review
 """
 
 def minWindowSlideWin(s, t):
@@ -51,6 +52,37 @@ def minWindowSlideWin(s, t):
 
     return '' if win_s == len(s)+1 else s[hd:hd+win_s]
 
+def minWindowSlideWin_r(s, t):
+    map = [0]*128
+    count = 0
+    set_t = set(list(t))
+    for i in t:
+        map[ord(i)] += 1
+        count += 1
+
+    beg = 0
+    min_len_s = s + 'Z'
+
+    for end in range(len(s)):
+        v = s[end]
+        map[ord(v)] -= 1
+
+        if map[ord(v)] >= 0:
+            count -= 1
+
+        while count == 0:
+            temp_s = s[beg:end+1]
+            min_len_s = temp_s if len(temp_s) < len(min_len_s) else min_len_s
+
+            if s[beg] in set_t:
+                map[ord(s[beg])] += 1
+                if map[ord(s[beg])] > 0:
+                    count += 1
+
+            beg += 1
+
+    return min_len_s if min_len_s != s + 'Z' else ''
+
 def minWindow(s, t):
     """
     TLE with 267/268 accepted.
@@ -80,6 +112,7 @@ def test1():
     t = 'ABC'
     print(minWindow(s, t))
     print(minWindowSlideWin(s, t))
+    print(minWindowSlideWin_r(s, t))
     print('----------------')
 
 def test2():
@@ -87,6 +120,7 @@ def test2():
     t = 'XYZ'
     print(minWindow(s, t))
     print(minWindowSlideWin(s, t))
+    print(minWindowSlideWin_r(s, t))
     print('----------------')
 
 def test3():
@@ -94,6 +128,7 @@ def test3():
     t = 'ABC'
     print(minWindow(s, t))
     print(minWindowSlideWin(s, t))
+    print(minWindowSlideWin_r(s, t))
     print('----------------')
 
 def test4():
@@ -101,6 +136,7 @@ def test4():
     t = ''
     print(minWindow(s, t))
     print(minWindowSlideWin(s, t))
+    print(minWindowSlideWin_r(s, t))
     print('----------------')
 
 def test5():
@@ -108,6 +144,15 @@ def test5():
     t = 'a'
     print(minWindow(s, t))
     print(minWindowSlideWin(s, t))
+    print(minWindowSlideWin_r(s, t))
+    print('----------------')
+
+def test6():
+    s = 'aZ'
+    t = 'aZ'
+    print(minWindow(s, t))
+    print(minWindowSlideWin(s, t))
+    print(minWindowSlideWin_r(s, t))
     print('----------------')
 
 if __name__ == '__main__':
@@ -116,3 +161,4 @@ if __name__ == '__main__':
     test3()
     test4()
     test5()
+    test6()

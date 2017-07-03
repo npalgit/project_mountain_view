@@ -10,7 +10,7 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 
 A solution is ["cats and dog", "cat sand dog"].
 #140
-REDO: dfs_mem, bfs_mem, time complexity
+REDDO: dfs_mem, dp_mem, time complexity
 """
 
 from collections import deque
@@ -45,7 +45,10 @@ def wordBreakSSHelper(s, wSet, mem):
     mem[s] = rslt
     return rslt
 
-def wordBreakBT(s, wList):
+def wordBreakDFS(s, wList):
+    """
+    29/37 passed. TLE
+    """
     wSet = set(wList)
     rslt = []
     dfs(s, [], 0, wSet, rslt)
@@ -63,7 +66,7 @@ def dfs(s, tl, start, wSet, rslt):
             dfs(s, tl, end+1, wSet, rslt)
             tl.pop()
 
-def wordBreak(s, wList):
+def wordBreakBFS(s, wList):
     """
     29/37 passed. TLE
     """
@@ -84,43 +87,36 @@ def wordBreak(s, wList):
                 q.append((end+1, tl))
     return rslt
 
-def wordBreakBTMem(s, wList):
+def wordBreak_dp(s, wList):
     """
-    Here for historical reference. There are duplicated answers at the end
+    TLE 29/37
     """
+    dp = [x[:] for x in [[]]*len(s)]
     wSet = set(wList)
-    mem = {}
-    dfsMem(s, 0, wSet, mem)
-    #print(mem)
-    return [' '.join(l) for l in mem[len(s)-1]]
-
-def dfsMem(s, start, wSet, mem):
     n = len(s)
-    for end in range(start, n):
-        if s[start:end+1] in wSet:
-            prev_ls = mem.get(start-1, [[]])
-            new_ls = copy.deepcopy(prev_ls)
-            for l in new_ls:
-                l.append(s[start:end+1])
-            end_ls = mem.get(end, [])
-            end_ls.extend(new_ls)
-            mem[end] = end_ls
-            print(mem)
-            dfsMem(s, end+1, wSet, mem)
+
+    for start in reversed(range(n)):
+        for end in range(start, n):
+            if s[start:end+1] in wSet and end+1 == n:
+                dp[start].append([s[start:end+1]])
+            elif s[start:end+1] in wSet and dp[end+1]:
+                for l in dp[end+1]:
+                    dp[start].append([s[start:end+1]] + l)
+    return [' '.join(l) for l in dp[0]]
 
 def test1():
     s = 'catsanddog'
     wList = ['cat', 'cats', 'and', 'sand', 'dog']
-    #print(wordBreak(s, wList))
     print(wordBreakSS(s, wList))
-    #print(wordBreakBT(s, wList))
+    print(wordBreak_dp(s, wList))
+    print('--------------------')
 
 def test2():
     s = 'abcedf'
     wList = ['a', 'b', 'c', 'd', 'e', 'f', 'abcedf']
-    #print(wordBreak(s, wList))
     print(wordBreakSS(s, wList))
-    #print(wordBreakBT(s, wList))
+    print(wordBreak_dp(s, wList))
+    print('--------------------')
 
 if __name__ == '__main__':
     test1()

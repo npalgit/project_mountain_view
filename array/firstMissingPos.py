@@ -8,7 +8,7 @@ and [3,4,-1,1] return 2.
 Your algorithm should run in O(n) time and uses constant space.
 
 #41
-REDO: need to figure out the trick first try. the corner cases on annoying.
+REDDO: need to figure out the trick first try. the corner cases on annoying.
 """
 def firstmpos(nums):
     """

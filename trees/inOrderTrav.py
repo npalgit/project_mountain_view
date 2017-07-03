@@ -2,7 +2,7 @@
 """
 Binary tree in order traversal.
 #94
-REDO iterative.
+REDDO iterative.
 """
 from btNode import BTNode
 
@@ -13,6 +13,20 @@ def inOrderTrav(n, rslt):
     inOrderTrav(n.left, rslt)
     rslt.append(n.val)
     inOrderTrav(n.right, rslt)
+
+def inOrderTravIter_r(n):
+    res = []
+    stck = []
+
+    while stck or n:
+        if n:
+            stck.append(n)
+            n = n.left
+        else:
+            n = stck.pop()
+            res.append(n.val)
+            n = n.right
+    return res
 
 def inOrderTravRec(n):
     if not n:

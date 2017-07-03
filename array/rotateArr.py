@@ -8,9 +8,32 @@ Note:
 Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
 
 #189
-REDO: the method with mod.
+REDDO: the method with mod.
+review: different methods
 """
 def ra_mod(nums, k):
+    """
+    comment: draw out a circle of the array.
+    you go around each k step. There are two possiblity.
+    1. the circle will end where it starts.
+    2. it does not end where it starts.
+    Since it is a circle, it does not matter where we start.
+    We will have only 1 or 2 above.
+
+    situation 1. we start the circle again at the next index.
+        since the first ended where it started. We know that start+1
+        has not been touched. If it is touched that means we are taking
+        step 1 each time, and consequently count would've been reached
+        as well.
+    situation 2. we know it will traverse all elements. because 
+        first time it goes around it did not end up at start. but 
+        ends up at some index past the first. We can see it as 
+        the second cycle. Since its a circle starting point does not
+        matter, we know that the second iteration, it will not end 
+        where it begins either, the iteration ends when count gets
+        reached.
+
+    """
     cnt, n = 0, len(nums)
     k %= n
     start = 0

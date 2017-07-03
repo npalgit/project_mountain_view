@@ -2,9 +2,27 @@
 """
 Given a BST, return the kth smallest 
 #230
-REDO: the other two methods. the current one is great.
+REDDO: the other two methods. the current one is great.
 """
 from btNode import BTNode
+
+def kSmallestIter(n, k):
+    stck = []
+    cnt = 0
+    pushAll(n, stck)
+
+    while stck and cnt < k:
+        n = stck.pop()
+        pushAll(n.right, stck)
+        cnt += 1
+
+    return n.val if n else None
+
+def pushAll(n, stck):
+    while n:
+        stck.append(n)
+        n = n.left
+
 def dfs(n, counter, k):
     if not n: return
     lhs = dfs(n.left, counter, k)
@@ -39,6 +57,7 @@ def test1():
 
     res = dfs(n5, [0], 8)
     print(res)
+    print(kSmallestIter(n5, 8))
 
 if __name__ == '__main__':
     test1()

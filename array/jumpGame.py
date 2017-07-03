@@ -9,7 +9,8 @@ A = [2,3,1,1,4], return true.
 A = [3,2,1,0,4], return false.
 
 leetcode #55
-REDO: maybe not top priority, its like the max subarray problem. Do it without looking at the solution.
+REDDO: maybe not top priority, its like the max subarray problem. Do it without looking at the solution.
+review-optional
 """
 def jumpG(l):
     max_idx = 0

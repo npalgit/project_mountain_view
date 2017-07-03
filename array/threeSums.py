@@ -13,7 +13,7 @@ A solution set is:
     ]
 
 leetcode #15
-REDO defintily
+REDDO defintily
 """
 
 def threeSum(arr, targ):
@@ -25,7 +25,6 @@ def threeSum(arr, targ):
     # enough elements for you
     for i in xrange(len(arr)-2):
         if i == 0 or (i >0 and arr[i] != arr[i-1]):
-            print(i)
             rem = targ - arr[i]
             beg = i+1
             end = len(arr)-1
@@ -46,33 +45,84 @@ def threeSum(arr, targ):
                     end -= 1
     return rslt
 
+def threeSum_r(nums):
+    nums.sort()
+    res = []
+    c = 0
+    while c < len(nums)-2:
+        imm_t = -nums[c]
+        l = c + 1
+        h = len(nums)-1
+        while l < h:
+            if nums[l] + nums[h] == imm_t:
+                res.append([nums[c], nums[l], nums[h]])
+                l += 1
+                h -= 1
+                while l < h and nums[l-1] == nums[l]:
+                    l += 1
+                while l < h and nums[h+1] == nums[h]:
+                    h -= 1
+
+            elif nums[l] + nums[h] < imm_t:
+                l += 1
+            else:
+                h -= 1
+
+        c += 1
+        while c < len(nums) and nums[c-1] == nums[c]:
+            c += 1
+
+    return res
+
+
 def test1():
     arr = [-1, 0, 1, 2, -1, -4]
     print(threeSum(arr, 0))
+    arr = [-1, 0, 1, 2, -1, -4]
+    print(threeSum_r(arr))
+    print('----------------')
 
 def test2():
     arr = [-1, -1, -1, -1, -1]
     print(threeSum(arr, 0))
+    arr = [-1, -1, -1, -1, -1]
+    print(threeSum_r(arr))
+    print('----------------')
 
 def test3():
     arr = [-1, 0, 1, 2, 1, 2, -1, -1]
     print(threeSum(arr, 0))
+    arr = [-1, 0, 1, 2, 1, 2, -1, -1]
+    print(threeSum_r(arr))
+    print('----------------')
 
 def test4():
     arr = [1, -1, -1, 0]
     print(threeSum(arr, 0))
+    arr = [1, -1, -1, 0]
+    print(threeSum_r(arr))
+    print('----------------')
 
 def test5():
     arr = [-2, 0, 0, 2, 2]
     print(threeSum(arr, 0))
+    arr = [-2, 0, 0, 2, 2]
+    print(threeSum_r(arr))
+    print('----------------')
 
 def test6():
     arr = [-2, 0, 1, 1, 2]
     print(threeSum(arr, 0))
+    arr = [-2, 0, 1, 1, 2]
+    print(threeSum_r(arr))
+    print('----------------')
 
 def test7():
     arr = [3,0,-2,-1,1,2]
     print(threeSum(arr, 0))
+    arr = [3,0,-2,-1,1,2]
+    print(threeSum_r(arr))
+    print('----------------')
 
 if __name__ == '__main__':
     test1()

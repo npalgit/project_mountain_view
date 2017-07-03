@@ -23,7 +23,7 @@ The flattened tree should look like:
             \
              6
 leetcode #114
-REDO: smart solution
+REDDO: smart solution
 """
 from btNode import BTNode
 

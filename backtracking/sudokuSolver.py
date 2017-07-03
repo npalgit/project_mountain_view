@@ -4,7 +4,7 @@ Write a program to solve a Sudoku puzzle by filling the empty cells.
 Empty cells are indicated by the character '.'.
 
 #37
-REDO: good quesiton to get re-acquinted with. did not struggle too much.
+REDDO: good quesiton to get re-acquinted with. did not struggle too much.
 """
 
 def solver(board):
