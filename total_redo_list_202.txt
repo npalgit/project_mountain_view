@@ -42,8 +42,8 @@ dynamicProgramming/wildCardMatching.py:5:REDO: quick for practice. notice the sp
 graph/courseSchedule.py:23:REDO: for practice all the solutions
 graph/jumpGame2.py:15:REDO: go over bfs solution.
 graph/removeInvalidParenthese.py:13:REDO: great question.
-[done] [submit] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
-[done] [submit] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
+[done] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
+[done] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
 [done] linkedList/copyRandomPointer.py:8:REDO: interesting algorithm
 linkedList/findNodeCycle.py:7:REDO: being able to solve the math part on your own
 [done] linkedList/linkedlistjoint.py:13:REDO: the short code

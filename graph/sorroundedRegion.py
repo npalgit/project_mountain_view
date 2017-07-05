@@ -133,19 +133,11 @@ def flip_area(b, flip_itms):
         b[itm[0]][itm[1]] = 'X'
 # --------------- re-implement dfs -----------------------
 def flipSorroundedOXB_r(b):
+    """
+    good solution but gives stack overflow on leetcode
+    """
     if b == [] or b == [[]]: return
-    #b = map(list, b)
     n_row, n_col = len(b), len(b[0])
-
-    # set bound n_col
-    #for i in range(n_row):
-    #    if b[i][0] == 'O': b[i][0] = 'B'
-    #    if b[i][n_col-1] == 'O': b[i][n_col-1] = 'B'
-
-    ## set bound n_row
-    #for j in range(n_col):
-    #    if b[0][j] == 'O': b[0][j] = 'B'
-    #    if b[n_row-1][j] == 'O': b[n_row-1][j] = 'B'
 
     for i in range(1, n_row-1):
         for j in range(1, n_col-1):
@@ -231,7 +223,59 @@ def test3():
         print(l)
     print('-------------')
 
+def test4():
+    b = ['XXXXXXXX', \
+        'XOXOOOXO', \
+        'XOOOXOOX', \
+        'XOOOOOXO',  \
+        'XXXXXXXO']
+    b = map(list, b)
+    flipSorroundedOXB_r(b)
+
+    for l in b:
+        print(l)
+
+    print('- - - - - - -')
+    b = ['XXXXXXXX', \
+        'XOXOOOXO', \
+        'XOOOXOOX', \
+        'XOOOOOXO',  \
+        'XXXXXXXO']
+    b = map(list, b)
+    flipSorroundedOXB(b)
+
+    for l in b:
+        print(l)
+    print('-------------')
+
+def test5():
+    b = ['OOOOOOOOOXX', \
+        'XXXXXXXXOXX', \
+        'XXOOOOOOOXX', \
+        'XXOXXXXXXXX', \
+        'XXOOOOOOOXX']
+    b = map(list, b)
+    flipSorroundedOXB_r(b)
+
+    for l in b:
+        print(l)
+
+    print('- - - - - - -')
+    b = ['OOOOOOOOOXX', \
+        'XXXXXXXXOXX', \
+        'XXOOOOOOOXX', \
+        'XXOXXXXXXXX', \
+        'XXOOOOOOOXX']
+    b = map(list, b)
+    flipSorroundedOXB(b)
+
+    for l in b:
+        print(l)
+    print('-------------')
+
 if __name__ == '__main__':
     test1()
     test2()
     test3()
+    test4()
+    test5()

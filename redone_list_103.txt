@@ -26,8 +26,8 @@ total_redo_list_202.txt:25:[done] backtracking/permutationDup.py:13:REDO: figure
 total_redo_list_202.txt:26:[done] backtracking/sudokuSolver.py:7:REDO: good quesiton to get re-acquinted with. did not struggle too much.
 total_redo_list_202.txt:27:[done] backtracking/wordBreak2.py:13:REDO: dfs_mem, bfs_mem, time complexity
 total_redo_list_202.txt:41:[done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
-total_redo_list_202.txt:45:[done] [submit] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
-total_redo_list_202.txt:46:[done] [submit] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
+total_redo_list_202.txt:45:[done] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
+total_redo_list_202.txt:46:[done] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
 total_redo_list_202.txt:47:[done] linkedList/copyRandomPointer.py:8:REDO: interesting algorithm
 total_redo_list_202.txt:49:[done] linkedList/linkedlistjoint.py:13:REDO: the short code
 total_redo_list_202.txt:50:[done] linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
