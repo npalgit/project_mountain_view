@@ -72,6 +72,38 @@ def copyRandomPointerNoHash(head):
     n.next = None
     return cloneHead
 
+    # --------- re-implement ----------
+    def copyRandomPointer_r(head):
+        if not head: return None
+        copyNextNodes(head)
+        copyRandomNodes(head)
+        copyHead = head.next
+        severNodes(head)
+        return copyHead
+
+    def copyNextNodes_r(n):
+        while n:
+            copyN = RandomListNode(n.label)
+            n_next = n.next
+            n.next = copyN
+            copyN.next = n_next
+            n = n.next.next
+
+    def copyRandomNodes_r(n):
+        while n:
+            copyN = n.next
+            randomN = n.random
+            copyRandomN = n.random.next if n.random else None
+            copyN.random = copyRandomN
+            n = n.next.next
+
+    def severNodes_r(n):
+        while n:
+            copyN = n.next
+            n.next = n.next.next
+            if copyN.next: copyN.next = copyN.next.next
+            n = n.next
+    # --------- end re-implement ---------
 def test1():
     n1 = RandomListNode(1)
     n2 = RandomListNode(2)

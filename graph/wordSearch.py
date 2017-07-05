@@ -24,7 +24,7 @@ word = "SEE", -> returns true,
 word = "ABCB", -> returns false.
 
 #79
-REDO: need to figure out the correct approach first
+REDDO: need to figure out the correct approach first
 """
 from collections import deque
 
@@ -179,13 +179,41 @@ def getNbr(i, j, nrows, ncols):
 
     return rslt
 
+# -------------- re-implement dfs ---------------------
+def wSearchDfs_r(mtx, w):
+    mtx = map(list, mtx)
+    for i in range(len(mtx)):
+        for j in range(len(mtx[0])):
+            if dfs_r((i, j), w, mtx):
+                return True
+    return False
+
+def dfs_r(n, s, mtx):
+    if not s: return True
+    i, j = n[0], n[1]
+    if i < 0 or j < 0 or i >= len(mtx) or j >= len(mtx[0]) or mtx[i][j] != s[0]:
+        return False
+
+    sub_s = s[1:]
+    tmp, mtx[i][j] = mtx[i][j], -1
+
+    if dfs_r((i-1, j), sub_s, mtx) or \
+        dfs_r((i+1, j), sub_s, mtx) or \
+        dfs_r((i, j-1), sub_s, mtx) or \
+        dfs_r((i, j+1), sub_s, mtx):
+        return True
+
+    mtx[i][j] = tmp
+    return False
+# ------------- end re-implement -------------------
+
 def test1():
    mtx = [['A', 'B', 'C', 'E'], \
          ['S', 'F', 'C', 'S'], \
           ['A', 'D', 'E', 'E']]
    w = 'ABCCED'
    print(wSearchDfsBetterMem(mtx, w))
-   print(wSearchDfs(mtx, w))
+   print(wSearchDfs_r(mtx, w))
    print('------------------')
 
 def test2():
@@ -194,7 +222,7 @@ def test2():
           ['A', 'D', 'E', 'E']]
    w = 'SEE'
    print(wSearchDfsBetterMem(mtx, w))
-   print(wSearchDfs(mtx, w))
+   print(wSearchDfs_r(mtx, w))
    print('------------------')
 
 def test3():
@@ -203,28 +231,28 @@ def test3():
           ['A', 'D', 'E', 'E']]
    w = 'ABCB'
    print(wSearchDfsBetterMem(mtx, w))
-   print(wSearchDfs(mtx, w))
+   print(wSearchDfs_r(mtx, w))
    print('------------------')
 
 def test4():
     mtx = ["abc","aed","afg"]
     w = "abcdef"
     print(wSearchDfsBetterMem(mtx, w))
-    print(wSearchDfs(mtx, w))
+    print(wSearchDfs_r(mtx, w))
     print('------------------')
 
 def test5():
     mtx = ["CAA","AAA","BCD"]
     w = "AAB"
     print(wSearchDfsBetterMem(mtx, w))
-    print(wSearchDfs(mtx, w))
+    print(wSearchDfs_r(mtx, w))
     print('------------------')
 
 def test6():
     mtx = ["ab","cd"]
     w = "abcd"
     print(wSearchDfsBetterMem(mtx, w))
-    print(wSearchDfs(mtx, w))
+    print(wSearchDfs_r(mtx, w))
     print('------------------')
 
 if __name__ == '__main__':

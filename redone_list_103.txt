@@ -1,5 +1,6 @@
 total_redo_list_202.txt:1:[done] array/addBin.py:15:REDO: do it recursively
 total_redo_list_202.txt:2:[done] array/firstMissingPos.py:11:REDO: need to figure out the trick first try. the corner cases on annoying.
+total_redo_list_202.txt:3:[done] array/fourSums.py:16:REDO. even tho got this on the first try, after doing 3Sum, avoid duplicates annoying
 total_redo_list_202.txt:4:[done] array/gasStation.py:12:REDO: need to find the pattern. I don't like this question that much. need to solve with no hints
 total_redo_list_202.txt:5:[done] array/jumpGame.py:12:REDO: maybe not top priority, its like the max subarray problem. Do it without looking at the solution.
 total_redo_list_202.txt:6:[done] array/longestNonRepeatingSubstring.py:15:REDO for better practice.
@@ -24,10 +25,15 @@ total_redo_list_202.txt:24:[done] backtracking/palindromePartition.py:15:REDO: g
 total_redo_list_202.txt:25:[done] backtracking/permutationDup.py:13:REDO: figure out the correct condition
 total_redo_list_202.txt:26:[done] backtracking/sudokuSolver.py:7:REDO: good quesiton to get re-acquinted with. did not struggle too much.
 total_redo_list_202.txt:27:[done] backtracking/wordBreak2.py:13:REDO: dfs_mem, bfs_mem, time complexity
+total_redo_list_202.txt:41:[done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
+total_redo_list_202.txt:45:[done] [submit] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
+total_redo_list_202.txt:46:[done] [submit] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
+total_redo_list_202.txt:47:[done] linkedList/copyRandomPointer.py:8:REDO: interesting algorithm
 total_redo_list_202.txt:49:[done] linkedList/linkedlistjoint.py:13:REDO: the short code
 total_redo_list_202.txt:50:[done] linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
 total_redo_list_202.txt:51:[done] linkedList/reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
 total_redo_list_202.txt:52:[done] linkedList/rotateList.py:10:REDO: clever solution
+total_redo_list_202.txt:59:[done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
 total_redo_list_202.txt:66:[done] misc/palinNum.py:9:REDO
 total_redo_list_202.txt:68:[done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
 total_redo_list_202.txt:69:[done] misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
@@ -46,5 +52,6 @@ total_redo_list_202.txt:91:[done] trees/de_serializeBT.py:15:REDO: Got this firs
 total_redo_list_202.txt:92:[done] trees/inOrderTrav.py:5:REDO iterative.
 total_redo_list_202.txt:93:[done] trees/kthSmallest.py:5:REDO: the other two methods. the current one is great.
 total_redo_list_202.txt:94:[done] trees/linkedlistToBST.py:6:REDO: got O(nlogn) right away. review with O(n). Also notice pointer doesn't work in python
+total_redo_list_202.txt:95:[done] trees/lowestCommonAnces.py:7:REDO: figure out the algo quick
 total_redo_list_202.txt:103:[done] trees/treeToLinkedList.py:26:REDO: smart solution
 total_redo_list_202.txt:104:[done] trees/zigZagTraverse.py:20:REDO: make sure can do this first try. should be fast

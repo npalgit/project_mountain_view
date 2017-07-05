@@ -12,7 +12,7 @@ Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as [1,2],[3,10
 This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 
 #57
-#REDO: remember try not to do it in place
+#REDDO: remember try not to do it in place
 """
 class Interval(object):
     def __init__(self, s=0, e=0):

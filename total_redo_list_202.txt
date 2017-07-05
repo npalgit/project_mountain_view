@@ -38,13 +38,13 @@ dynamicProgramming/russianDoll.py:11:REDO: review the trick if width are the sam
 dynamicProgramming/shortestPalinPartition.py:10:REDO: review both solutions, optionally coding them.
 dynamicProgramming/stockKTimes.py:5:REDO: excellent, watch out for corner cases. and begining index
 dynamicProgramming/wildCardMatching.py:5:REDO: quick for practice. notice the special case invovles preprocessing.
-graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
+[done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
 graph/courseSchedule.py:23:REDO: for practice all the solutions
 graph/jumpGame2.py:15:REDO: go over bfs solution.
 graph/removeInvalidParenthese.py:13:REDO: great question.
-graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
-graph/wordSearch.py:27:REDO: need to figure out the correct approach first
-linkedList/copyRandomPointer.py:8:REDO: interesting algorithm
+[done] [submit] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
+[done] [submit] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
+[done] linkedList/copyRandomPointer.py:8:REDO: interesting algorithm
 linkedList/findNodeCycle.py:7:REDO: being able to solve the math part on your own
 [done] linkedList/linkedlistjoint.py:13:REDO: the short code
 [done] linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
@@ -56,7 +56,7 @@ misc/factorialTrailingZeros.py:7:REDO
 misc/fractionToDecimal.py:16:REDO: very good question to redo without any help
 misc/generateParentheses.py:15:REDO - really good question
 misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
-misc/insertIntervals.py:15:#REDO: remember try not to do it in place
+[done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
 misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
 misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
 misc/longestValidParentheses.py:11:REDO: everything. very tricky
@@ -92,7 +92,7 @@ trees/countUniqueBST.py:15:REDO: figured out self with hints. must know
 [done] trees/inOrderTrav.py:5:REDO iterative.
 [done] trees/kthSmallest.py:5:REDO: the other two methods. the current one is great.
 [done] trees/linkedlistToBST.py:6:REDO: got O(nlogn) right away. review with O(n). Also notice pointer doesn't work in python
-trees/lowestCommonAnces.py:7:REDO: figure out the algo quick
+[done] trees/lowestCommonAnces.py:7:REDO: figure out the algo quick
 trees/maxSumPath.py:16:REDO: tricky question with clear algorithm. This is a hard question
 trees/nextRightPointer.py:19:REDO: quickly the iterative, sol with O(1) space.
 trees/nextRightPointerAnyTree.py:24:REDO: tricky algo.

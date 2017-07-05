@@ -15,7 +15,7 @@ X X X X
 X X X X
 X O X X
 #130
-REDO: classic question no need to recode, be familiar with it
+REDDO: classic question no need to recode, be familiar with it
 """
 from collections import deque
 
@@ -131,6 +131,50 @@ def isBorder(n, w, h):
 def flip_area(b, flip_itms):
     for itm in flip_itms:
         b[itm[0]][itm[1]] = 'X'
+# --------------- re-implement dfs -----------------------
+def flipSorroundedOXB_r(b):
+    if b == [] or b == [[]]: return
+    #b = map(list, b)
+    n_row, n_col = len(b), len(b[0])
+
+    # set bound n_col
+    #for i in range(n_row):
+    #    if b[i][0] == 'O': b[i][0] = 'B'
+    #    if b[i][n_col-1] == 'O': b[i][n_col-1] = 'B'
+
+    ## set bound n_row
+    #for j in range(n_col):
+    #    if b[0][j] == 'O': b[0][j] = 'B'
+    #    if b[n_row-1][j] == 'O': b[n_row-1][j] = 'B'
+
+    for i in range(1, n_row-1):
+        for j in range(1, n_col-1):
+            dfs_r((i, j), b)
+
+    # flip B to O
+    for i in range(n_row):
+        for j in range(n_col):
+            if b[i][j] == 'B': b[i][j] = 'O'
+    return b
+
+def dfs_r(n, b):
+    i, j = n[0], n[1]
+    n_row, n_col = len(b), len(b[0])
+    if i < 0 or j < 0 or i >= n_row or j >= n_col or b[i][j] == 'B':
+        return False
+
+    if b[i][j] == 'X': return True
+    b[i][j] = 'X'
+    if dfs_r((i-1, j), b) and \
+        dfs_r((i+1, j), b) and \
+        dfs_r((i, j-1), b) and \
+        dfs_r((i, j+1), b):
+        return True
+
+    b[i][j] = 'B'
+    return False
+
+# --------------------------------------------------------
 
 def test1():
     b = [\
@@ -139,11 +183,12 @@ def test1():
     ['X','X','O','X'], \
     ['X','O','X','X']]
 
-    flipSorrounded(b)
+    flipSorroundedOXB_r(b)
 
     for l in b:
         print(l)
 
+    print('- - - - - - -')
     b = [\
     ['X','X','X','X'], \
     ['X','O','O','X'], \
@@ -158,11 +203,12 @@ def test1():
 
 def test2():
     b = [['O', 'X']]
-    flipSorrounded(b)
+    flipSorroundedOXB_r(b)
 
     for l in b:
         print(l)
 
+    print('- - - - - - -')
     b = [['O', 'X']]
     flipSorroundedOXB(b)
 
@@ -172,17 +218,19 @@ def test2():
 
 def test3():
     b = [[]]
-    flipSorrounded(b)
+    flipSorroundedOXB_r(b)
 
     for l in b:
         print(l)
 
+    print('- - - - - - -')
     b = [[]]
     flipSorroundedOXB(b)
 
     for l in b:
         print(l)
     print('-------------')
+
 if __name__ == '__main__':
     test1()
     test2()

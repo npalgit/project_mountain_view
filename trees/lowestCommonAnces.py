@@ -4,7 +4,7 @@ The lowest common ancestor is defined between two nodes v and w as the lowest no
 that has both v and w as descendants (where we allow a node to be a descendant of itself).
 Find the lowest common ancestor.
 #236
-REDO: figure out the algo quick
+REDDO: figure out the algo quick
 """
 from btNode import BTNode
 
