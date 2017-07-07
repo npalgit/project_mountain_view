@@ -5,3 +5,4 @@ time complexity of knapsack and np-complete
 #33, search in rotated. the smart algo, and no equals mid sol
 #162, findPeakElement. indices are really annoying
 #74, #240, search mtx 1 and 2
+#105 pre-order, in-order construction

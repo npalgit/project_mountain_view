@@ -60,11 +60,11 @@ misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python t
 misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
 misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
 misc/longestValidParentheses.py:11:REDO: everything. very tricky
-misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
+[done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
 misc/maxGap.py:12:REDO:Trick here is radix sort
 misc/onlineMedian.py:5:REDO: reimplement
 [done] misc/palinNum.py:9:REDO
-misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
+[done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
 [done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
 [done] misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
 misc/skyline.py:7:REDO
@@ -85,7 +85,7 @@ stack/simplyfyPath.py:10:REDO: maybe using stack is smart, did not think of it f
 stack/trappingWater.py:9:REDO: really proud, solved this myself. But redo for review
 [done] string/reverseWordsInStr.py:12:REDO: part where clean space happens
 [done] trees/bstIterator.py:11:REDO: must know
-trees/buildTreePreInorder.py:5:REDO: can't find the trick right away. Very smart solution
+[done] trees/buildTreePreInorder.py:5:REDO: can't find the trick right away. Very smart solution
 trees/buildUniqueBST.py:14:REDO: must know
 trees/countUniqueBST.py:15:REDO: figured out self with hints. must know
 [done] trees/de_serializeBT.py:15:REDO: Got this first try on my own. try to redo to practice different order traversal and iterative as tree exercises.

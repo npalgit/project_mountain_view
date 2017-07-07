@@ -34,7 +34,9 @@ total_redo_list_202.txt:50:[done] linkedList/mergeTwoSortedList.py:7:possibly RE
 total_redo_list_202.txt:51:[done] linkedList/reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
 total_redo_list_202.txt:52:[done] linkedList/rotateList.py:10:REDO: clever solution
 total_redo_list_202.txt:59:[done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
+total_redo_list_202.txt:63:[done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
 total_redo_list_202.txt:66:[done] misc/palinNum.py:9:REDO
+total_redo_list_202.txt:67:[done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
 total_redo_list_202.txt:68:[done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
 total_redo_list_202.txt:69:[done] misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
 total_redo_list_202.txt:71:[done] misc/sqrt.py:6:REDO: many smart solutions, try newton method optional
@@ -48,6 +50,7 @@ total_redo_list_202.txt:78:[done] search/searchRotatedArray.py:8:REDO: maybe, go
 total_redo_list_202.txt:79:[done] search/searchRotatedArrayDuplicates.py:9:REDO: need to figure out the sol on your own this along with #33
 total_redo_list_202.txt:86:[done] string/reverseWordsInStr.py:12:REDO: part where clean space happens
 total_redo_list_202.txt:87:[done] trees/bstIterator.py:11:REDO: must know
+total_redo_list_202.txt:88:[done] trees/buildTreePreInorder.py:5:REDO: can't find the trick right away. Very smart solution
 total_redo_list_202.txt:91:[done] trees/de_serializeBT.py:15:REDO: Got this first try on my own. try to redo to practice different order traversal and iterative as tree exercises.
 total_redo_list_202.txt:92:[done] trees/inOrderTrav.py:5:REDO iterative.
 total_redo_list_202.txt:93:[done] trees/kthSmallest.py:5:REDO: the other two methods. the current one is great.

@@ -3,7 +3,7 @@
 Implement LRU cache
 
 #146
-REDO: review the trick, as it is a common interview question.
+REDDO: review the trick, as it is a common interview question.
 """
 
 class LinkedNode:

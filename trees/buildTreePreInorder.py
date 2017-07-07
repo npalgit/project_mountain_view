@@ -1,8 +1,8 @@
 #!/usr/bin/python
 """
-Given inorder and postorder traversal of a tree, construct the binary tree.
+Given inorder and preorder traversal of a tree, construct the binary tree.
 #105
-REDO: can't find the trick right away. Very smart solution
+REDDO: can't find the trick right away. Very smart solution
 """
 from btNode import BTNode
 
