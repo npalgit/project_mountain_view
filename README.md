@@ -9,6 +9,15 @@ Various interesting algorithm question and solutions sourced from the web or que
 - Searching
 - Trees
 - String
+#Helpful links
+General:
+https://www.hiredintech.com
+
+Algorithm:
+http://algs4.cs.princeton.edu
+
+(Separate chaining  Hash)
+http://algs4.cs.princeton.edu/34hash/SeparateChainingHashST.java.html
 
 #Notes on dataStructure
 It contains various dataStructure I implemented both for exercise purpose and dependency by other code--those dataStructures may be used by other coding interview questions in this repo.
