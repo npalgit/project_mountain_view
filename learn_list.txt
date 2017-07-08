@@ -6,3 +6,6 @@ time complexity of knapsack and np-complete
 #162, findPeakElement. indices are really annoying
 #74, #240, search mtx 1 and 2
 #105 pre-order, in-order construction
+
+optional
+#99, recoverTree, morris-traverse perhaps

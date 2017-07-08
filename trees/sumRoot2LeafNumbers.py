@@ -16,7 +16,7 @@ The root-to-leaf path 1->3 represents the number 13.
 
 Return the sum = 12 + 13 = 25.
 #129
-REDO: Do this fast, review. Got this after seeing the interesting algorithm
+REDDO: Do this fast, review. Got this after seeing the interesting algorithm
 """
 from btNode import BTNode
 

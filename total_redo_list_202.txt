@@ -96,10 +96,10 @@ trees/countUniqueBST.py:15:REDO: figured out self with hints. must know
 trees/maxSumPath.py:16:REDO: tricky question with clear algorithm. This is a hard question
 trees/nextRightPointer.py:19:REDO: quickly the iterative, sol with O(1) space.
 trees/nextRightPointerAnyTree.py:24:REDO: tricky algo.
-trees/postOrderTrav.py:6:REDO: as part of review for different traversal techniques. and iterative procedure as well
-trees/recoverTree.py:11:#REDO: know how the algo works, no need to recode everything.
-trees/rightView.py:15:#REDO: learn the trick quickly, cleaver algo
-trees/sumRoot2LeafNumbers.py:19:REDO: Do this fast, review. Got this after seeing the interesting algorithm
+[done] trees/postOrderTrav.py:6:REDO: as part of review for different traversal techniques. and iterative procedure as well
+[done] trees/recoverTree.py:11:#REDO: know how the algo works, no need to recode everything.
+[done] trees/rightView.py:15:#REDO: learn the trick quickly, cleaver algo
+[done] trees/sumRoot2LeafNumbers.py:19:REDO: Do this fast, review. Got this after seeing the interesting algorithm
 [done] trees/treeToLinkedList.py:26:REDO: smart solution
 [done] trees/zigZagTraverse.py:20:REDO: make sure can do this first try. should be fast
 

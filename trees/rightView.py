@@ -12,7 +12,7 @@ Given the following binary tree,
 
 You should return [1, 3, 4].
 #199
-#REDO: learn the trick quickly, cleaver algo
+#REDDO: learn the trick quickly, cleaver algo
 """
 from btNode import BTNode
 

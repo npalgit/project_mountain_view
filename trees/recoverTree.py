@@ -8,7 +8,7 @@ Note:
 A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
 
 #99
-#REDO: know how the algo works, no need to recode everything.
+#REDDO: know how the algo works, no need to recode everything.
 """
 from btNode import BTNode
 
@@ -56,6 +56,7 @@ def test1():
     print('---------------')
     rt.rt(n4)
     BTNode.print_nodes(n4)
+    print('==============')
 
 def test2():
     n1 = BTNode(1)
@@ -70,5 +71,5 @@ def test2():
     BTNode.print_nodes(n2)
 
 if __name__ == '__main__':
-    #test1()
+    test1()
     test2()
