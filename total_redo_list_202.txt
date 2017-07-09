@@ -93,8 +93,8 @@ trees/countUniqueBST.py:15:REDO: figured out self with hints. must know
 [done] trees/kthSmallest.py:5:REDO: the other two methods. the current one is great.
 [done] trees/linkedlistToBST.py:6:REDO: got O(nlogn) right away. review with O(n). Also notice pointer doesn't work in python
 [done] trees/lowestCommonAnces.py:7:REDO: figure out the algo quick
-trees/maxSumPath.py:16:REDO: tricky question with clear algorithm. This is a hard question
-trees/nextRightPointer.py:19:REDO: quickly the iterative, sol with O(1) space.
+[done] trees/maxSumPath.py:16:REDO: tricky question with clear algorithm. This is a hard question
+[done] trees/nextRightPointer.py:19:REDO: quickly the iterative, sol with O(1) space.
 trees/nextRightPointerAnyTree.py:24:REDO: tricky algo.
 [done] trees/postOrderTrav.py:6:REDO: as part of review for different traversal techniques. and iterative procedure as well
 [done] trees/recoverTree.py:11:#REDO: know how the algo works, no need to recode everything.

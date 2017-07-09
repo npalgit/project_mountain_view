@@ -56,6 +56,8 @@ total_redo_list_202.txt:92:[done] trees/inOrderTrav.py:5:REDO iterative.
 total_redo_list_202.txt:93:[done] trees/kthSmallest.py:5:REDO: the other two methods. the current one is great.
 total_redo_list_202.txt:94:[done] trees/linkedlistToBST.py:6:REDO: got O(nlogn) right away. review with O(n). Also notice pointer doesn't work in python
 total_redo_list_202.txt:95:[done] trees/lowestCommonAnces.py:7:REDO: figure out the algo quick
+total_redo_list_202.txt:96:[done] trees/maxSumPath.py:16:REDO: tricky question with clear algorithm. This is a hard question
+total_redo_list_202.txt:97:[done] trees/nextRightPointer.py:19:REDO: quickly the iterative, sol with O(1) space.
 total_redo_list_202.txt:99:[done] trees/postOrderTrav.py:6:REDO: as part of review for different traversal techniques. and iterative procedure as well
 total_redo_list_202.txt:100:[done] trees/recoverTree.py:11:#REDO: know how the algo works, no need to recode everything.
 total_redo_list_202.txt:101:[done] trees/rightView.py:15:#REDO: learn the trick quickly, cleaver algo

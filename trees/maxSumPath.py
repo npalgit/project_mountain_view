@@ -13,7 +13,7 @@ Given the below binary tree,
 Return 6.
 
 #124
-REDO: tricky question with clear algorithm. This is a hard question
+REDDO: tricky question with clear algorithm. This is a hard question
 """
 from btNode import BTNode
 

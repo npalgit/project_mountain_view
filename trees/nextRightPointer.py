@@ -16,7 +16,7 @@ Note:
 You may only use constant extra space.
 You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 #116
-REDO: quickly the iterative, sol with O(1) space.
+REDDO: quickly the iterative, sol with O(1) space.
 """
 class TreeLinkNode:
     def __init__(self, x):
