@@ -56,6 +56,60 @@ def buildBST_dp(n):
  
     return rslt[1][n]
 
+# --------------------- re-implement --------------------
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+def treeNode(val, left, right):
+    n = TreeNode(val)
+    n.left = left
+    n.right = right
+    return n
+
+def buildBST_dp_r(n):
+    if n == 0: return []
+    dp = [x[:] for x in [[None]*(n+1)]*(n+1)]
+    ws = 0
+
+    while ws < n:
+        for b in range(1, n+1):
+            e = b+ws
+            if e > n: break
+
+            if not dp[b][e]: dp[b][e] = []
+            for i in range(b, e+1):
+                lhs_list = [None] if i-1 < b else dp[b][i-1]
+                rhs_list = [None] if i+1 > e else dp[i+1][e]
+                for lhs in lhs_list:
+                    for rhs in rhs_list:
+                        dp[b][e].append(treeNode(i, lhs, rhs))
+
+        ws += 1
+
+    return dp[1][-1]
+
+def buildBST_r(n):
+    """
+    Use mem speeds up to 98% from 40%
+    """
+    mem = {}
+    return buildHelper_r(1, n, mem)
+
+def buildHelper_r(b, e, mem):
+    if b > e: return [None]
+    if (b, e) in mem: return mem[(b, e)]
+    res = []
+    for i in range(b, e+1):
+        for l in buildHelper_r(b, i-1, mem):
+            for r in buildHelper_r(i+1, e, mem):
+                res.append(treeNode(i, l, r))
+
+    mem[(b, e)] = res
+    return res
+# -------------------------------------------------------
+
 def test1():
     rslt = buildUniqueBST(3)
     for t in rslt:
