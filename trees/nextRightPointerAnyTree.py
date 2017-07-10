@@ -21,7 +21,7 @@ After calling your function, the tree should look like:
     4-> 5 -> 7 -> NULL
 
 #117
-REDO: tricky algo.
+REDDO: tricky algo.
 """
 class TreeLinkNode:
     def __init__(self, x):

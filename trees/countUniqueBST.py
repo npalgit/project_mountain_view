@@ -12,7 +12,7 @@ Given n = 3, there are a total of 5 unique BST's.
    2     1         2                 3
 
 #96
-REDO: figured out self with hints. must know
+REDDO: figured out self with hints. must know
 """
 def cntBST(n):
     if n == 1: return 1
@@ -25,11 +25,28 @@ def cntBST(n):
 
     return G[-1]
 
+# -------------- re-implement --------------------
+def cntBST_r(n):
+    ways = [0]*(n+1)
+    ways[0] = 1
+    for i_n in range(1, n+1):
+        for idx in range(i_n):
+            ways[i_n] += ways[idx]*ways[i_n-idx-1]
+
+    return ways[-1]
+# ------------------------------------------------
+
 def test1():
     print(cntBST(3))
+    print(cntBST_r(3))
     print(cntBST(4))
+    print(cntBST_r(4))
     print(cntBST(5))
+    print(cntBST_r(5))
     print(cntBST(6))
+    print(cntBST_r(6))
+    print(cntBST(0))
+    print(cntBST_r(0))
 
 if __name__ == '__main__':
     test1()

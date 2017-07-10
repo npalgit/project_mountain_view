@@ -11,7 +11,7 @@ Return:
 ]
 Note: All inputs will be in lower-case.
 
-leetcode #49, maybe REDO, to get familiar with python trick syntax
+leetcode #49, maybe REDDO, to get familiar with python trick syntax
 """
 def groupAnagrams(strs):
     d = {}

@@ -55,7 +55,7 @@ misc/divideTwoInts.py:8:REDO: sol very efficient way of dividing.
 misc/factorialTrailingZeros.py:7:REDO
 misc/fractionToDecimal.py:16:REDO: very good question to redo without any help
 misc/generateParentheses.py:15:REDO - really good question
-misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
+[done] misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
 [done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
 misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
 misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
@@ -86,8 +86,8 @@ stack/trappingWater.py:9:REDO: really proud, solved this myself. But redo for re
 [done] string/reverseWordsInStr.py:12:REDO: part where clean space happens
 [done] trees/bstIterator.py:11:REDO: must know
 [done] trees/buildTreePreInorder.py:5:REDO: can't find the trick right away. Very smart solution
-trees/buildUniqueBST.py:14:REDO: must know
-trees/countUniqueBST.py:15:REDO: figured out self with hints. must know
+[done] trees/buildUniqueBST.py:14:REDO: must know
+[done] trees/countUniqueBST.py:15:REDO: figured out self with hints. must know
 [done] trees/de_serializeBT.py:15:REDO: Got this first try on my own. try to redo to practice different order traversal and iterative as tree exercises.
 [done] trees/inOrderTrav.py:5:REDO iterative.
 [done] trees/kthSmallest.py:5:REDO: the other two methods. the current one is great.
@@ -95,7 +95,7 @@ trees/countUniqueBST.py:15:REDO: figured out self with hints. must know
 [done] trees/lowestCommonAnces.py:7:REDO: figure out the algo quick
 [done] trees/maxSumPath.py:16:REDO: tricky question with clear algorithm. This is a hard question
 [done] trees/nextRightPointer.py:19:REDO: quickly the iterative, sol with O(1) space.
-trees/nextRightPointerAnyTree.py:24:REDO: tricky algo.
+[done] trees/nextRightPointerAnyTree.py:24:REDO: tricky algo.
 [done] trees/postOrderTrav.py:6:REDO: as part of review for different traversal techniques. and iterative procedure as well
 [done] trees/recoverTree.py:11:#REDO: know how the algo works, no need to recode everything.
 [done] trees/rightView.py:15:#REDO: learn the trick quickly, cleaver algo
