@@ -8,8 +8,8 @@ Follow up:
 If this function is called many times, how would you optimize it?
 
 Related problem: Reverse Integer
-#190 
-REDO: good question
+#190
+REDDO: good question
 """
 def reverseBits(n):
     res = 0
@@ -19,6 +19,16 @@ def reverseBits(n):
         res <<= 1
 
     return res + n
+
+def reverseBits_r(n):
+    mask = 0x1
+    res = 0
+
+    for _ in range(32):
+        res = (res << 1) | (mask & n)
+        n >>= 1
+
+    return res
 
 def reverseInt(n):
     res = 0

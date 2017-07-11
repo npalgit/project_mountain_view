@@ -7,7 +7,7 @@ path = "/home/", => "/home"
 path = "/a/./b/../../c/", => "/c"
 
 #71
-REDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution
+REDDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution
 """
 
 def simplifyPath(path):

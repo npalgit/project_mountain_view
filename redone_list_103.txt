@@ -25,6 +25,7 @@ total_redo_list_202.txt:24:[done] backtracking/palindromePartition.py:15:REDO: g
 total_redo_list_202.txt:25:[done] backtracking/permutationDup.py:13:REDO: figure out the correct condition
 total_redo_list_202.txt:26:[done] backtracking/sudokuSolver.py:7:REDO: good quesiton to get re-acquinted with. did not struggle too much.
 total_redo_list_202.txt:27:[done] backtracking/wordBreak2.py:13:REDO: dfs_mem, bfs_mem, time complexity
+total_redo_list_202.txt:29:[done] bits/reverseBits.py:12:REDO: good question
 total_redo_list_202.txt:41:[done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
 total_redo_list_202.txt:45:[done] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
 total_redo_list_202.txt:46:[done] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
@@ -33,8 +34,10 @@ total_redo_list_202.txt:49:[done] linkedList/linkedlistjoint.py:13:REDO: the sho
 total_redo_list_202.txt:50:[done] linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
 total_redo_list_202.txt:51:[done] linkedList/reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
 total_redo_list_202.txt:52:[done] linkedList/rotateList.py:10:REDO: clever solution
+total_redo_list_202.txt:57:[done] misc/generateParentheses.py:15:REDO - really good question
 total_redo_list_202.txt:58:[done] misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
 total_redo_list_202.txt:59:[done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
+total_redo_list_202.txt:61:[done] misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
 total_redo_list_202.txt:63:[done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
 total_redo_list_202.txt:66:[done] misc/palinNum.py:9:REDO
 total_redo_list_202.txt:67:[done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
@@ -49,6 +52,8 @@ total_redo_list_202.txt:76:[done] search/searchMtx2.py:22:REDO: learn the trick
 total_redo_list_202.txt:77:[done] search/searchRange.py:15:REDO: this is based on insert pos. good question
 total_redo_list_202.txt:78:[done] search/searchRotatedArray.py:8:REDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
 total_redo_list_202.txt:79:[done] search/searchRotatedArrayDuplicates.py:9:REDO: need to figure out the sol on your own this along with #33
+total_redo_list_202.txt:83:[done] stack/minStack.py:19:REDO: figure out how to keep min for all stack
+total_redo_list_202.txt:84:[done] stack/simplyfyPath.py:10:REDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution
 total_redo_list_202.txt:86:[done] string/reverseWordsInStr.py:12:REDO: part where clean space happens
 total_redo_list_202.txt:87:[done] trees/bstIterator.py:11:REDO: must know
 total_redo_list_202.txt:88:[done] trees/buildTreePreInorder.py:5:REDO: can't find the trick right away. Very smart solution

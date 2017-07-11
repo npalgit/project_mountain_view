@@ -16,7 +16,7 @@ minStack.pop();
 minStack.top();      --> Returns 0.
 minStack.getMin();   --> Returns -2.
 #155
-REDO: figure out how to keep min for all stack
+REDDO: figure out how to keep min for all stack
 """
 class MinStack(object):
 

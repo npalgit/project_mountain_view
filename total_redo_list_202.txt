@@ -26,7 +26,7 @@
 [done] backtracking/sudokuSolver.py:7:REDO: good quesiton to get re-acquinted with. did not struggle too much.
 [done] backtracking/wordBreak2.py:13:REDO: dfs_mem, bfs_mem, time complexity
 bits/bitwiseAndRange.py:7:REDO: smart algorithm
-bits/reverseBits.py:12:REDO: good question
+[done] bits/reverseBits.py:12:REDO: good question
 bits/singleNumK.py:5:REDO: crazy smart algorithm
 dynamicProgramming/burstBalloons.py:25:REDO: great problem
 dynamicProgramming/distinctSubsequence.py:12:REDO: and similar ones
@@ -54,11 +54,11 @@ misc/candy.py:11:REDO
 misc/divideTwoInts.py:8:REDO: sol very efficient way of dividing.
 misc/factorialTrailingZeros.py:7:REDO
 misc/fractionToDecimal.py:16:REDO: very good question to redo without any help
-misc/generateParentheses.py:15:REDO - really good question
+[done] misc/generateParentheses.py:15:REDO - really good question
 [done] misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
 [done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
 misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
-misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
+[done] misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
 misc/longestValidParentheses.py:11:REDO: everything. very tricky
 [done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
 misc/maxGap.py:12:REDO:Trick here is radix sort
@@ -80,8 +80,8 @@ misc/skyline.py:7:REDO
 sort/kMostFrequent.py:13:REDO: go over algorithm no need to code everything. look into bucket sort
 sort/quickSelect.py:11:REDO: great question
 stack/largestHistogram.py:12:REDO: related to 42, make sure can do both solutions and know the difference
-stack/minStack.py:19:REDO: figure out how to keep min for all stack
-stack/simplyfyPath.py:10:REDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution
+[done] stack/minStack.py:19:REDO: figure out how to keep min for all stack
+[done] stack/simplyfyPath.py:10:REDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution
 stack/trappingWater.py:9:REDO: really proud, solved this myself. But redo for review
 [done] string/reverseWordsInStr.py:12:REDO: part where clean space happens
 [done] trees/bstIterator.py:11:REDO: must know

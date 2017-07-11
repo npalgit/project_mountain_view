@@ -10,7 +10,7 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 Your algorithm should run in O(n) complexity.
 
 #128
-REDO: unique algo never seen before, know both algos
+REDDO: unique algo never seen before, know both algos
 """
 def findLongest(nums):
     dic = {}
