@@ -10,7 +10,7 @@ Examples:
 ")(" -> [""]
 
 #301
-REDO: great question.
+REDDO: great question.
 """
 from collections import deque
 

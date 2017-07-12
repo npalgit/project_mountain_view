@@ -2,7 +2,7 @@
 """
 Given an array of integers, every element appears three times except for one, which appears exactly once. Find that single one.
 #137
-REDO: crazy smart algorithm
+REDDO: crazy smart algorithm
 """
 def sn3(nums):
     """
@@ -19,7 +19,7 @@ def sn3(nums):
     # if there are 1 (0b01), 2 (0b10) bits,
     # the result's corresponding bit
     # will be a 1
-    return a | b
+    return a | b # if only appears once, return b is fine
 
 def sn4(nums):
     """

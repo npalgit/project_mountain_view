@@ -12,8 +12,9 @@ Given array A = [2,3,1,1,4]
 The minimum number of jumps to reach the last index is 2. 
 (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
 #45
-REDO: go over bfs solution.
+REDDO: go over bfs solution.
 """
+from collections import deque
 def jumpG(nums):
     """
     dynamic programming solution.
@@ -31,6 +32,40 @@ def jumpG(nums):
         dp[i] = min_jp + 1
 
     return dp[0]
+
+def jumpGBFS(nums):
+    """
+    TLE at 80/92
+    """
+    if len(nums) <= 1: return 0
+    end = len(nums)-1
+    q = deque()
+    q.append((0, 0))
+    while q:
+        n = q.popleft()
+        for d in range(1, nums[n[0]]+1):
+            if n[0] + d >= end:
+                return n[1]+1
+            q.append((n[0]+d, n[1]+1))
+
+    return -1
+
+def jumpGBFSSpaceEffic_r(nums):
+    count = 0
+    beg, end, max_end = 0, 0, 0
+
+    while beg < len(nums)-1:
+        for i in range(beg, end+1):
+            max_end = max(max_end, i+nums[i])
+            if max_end >= len(nums)-1:
+                return count+1
+        beg = end+1
+        end = max_end
+        max_end = 0
+
+        count += 1
+
+    return count
 
 def jumpGBFSSpaceEffic(nums):
     n_len, start, end = len(nums), 0, 0

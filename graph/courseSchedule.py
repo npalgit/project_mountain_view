@@ -20,7 +20,7 @@ The input prerequisites is a graph represented by a list of edges, not adjacency
 You may assume that there are no duplicate edges in the input prerequisites.
 #207
 
-REDO: for practice all the solutions
+REDDO: for practice all the solutions
 """
 from collections import deque
 

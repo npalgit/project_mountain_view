@@ -10,3 +10,6 @@ time complexity of knapsack and np-complete
 optional
 #99, recoverTree, morris-traverse perhaps
 #117, the trick of prev, curr
+#142, math of finding node where fast and slow pointers collide
+#207, Kahn's topological sort algo
+#137, single numbers

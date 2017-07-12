@@ -8,7 +8,7 @@ Given [3,2,1,5,6,4] and k = 2, return 5.
 Note: 
 You may assume k is always valid, 1 <= k <= array's length.
 #215
-REDO: great question
+REDDO: great question
 """
 def partition(nums, b, e, k):
     if b > e:
@@ -18,7 +18,7 @@ def partition(nums, b, e, k):
     pivot = nums[e]
 
     for j in range(b, e):
-        if nums[j] >= pivot:
+        if nums[j] >= pivot: # > or >= does not matter
             i += 1
             nums[i], nums[j] = nums[j], nums[i]
 

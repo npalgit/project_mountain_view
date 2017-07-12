@@ -25,9 +25,9 @@
 [done] backtracking/permutationDup.py:13:REDO: figure out the correct condition
 [done] backtracking/sudokuSolver.py:7:REDO: good quesiton to get re-acquinted with. did not struggle too much.
 [done] backtracking/wordBreak2.py:13:REDO: dfs_mem, bfs_mem, time complexity
-bits/bitwiseAndRange.py:7:REDO: smart algorithm
+[done] bits/bitwiseAndRange.py:7:REDO: smart algorithm
 [done] bits/reverseBits.py:12:REDO: good question
-bits/singleNumK.py:5:REDO: crazy smart algorithm
+[done] bits/singleNumK.py:5:REDO: crazy smart algorithm
 dynamicProgramming/burstBalloons.py:25:REDO: great problem
 dynamicProgramming/distinctSubsequence.py:12:REDO: and similar ones
 dynamicProgramming/editDistance.py:12:REDO
@@ -39,13 +39,13 @@ dynamicProgramming/shortestPalinPartition.py:10:REDO: review both solutions, opt
 dynamicProgramming/stockKTimes.py:5:REDO: excellent, watch out for corner cases. and begining index
 dynamicProgramming/wildCardMatching.py:5:REDO: quick for practice. notice the special case invovles preprocessing.
 [done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
-graph/courseSchedule.py:23:REDO: for practice all the solutions
-graph/jumpGame2.py:15:REDO: go over bfs solution.
-graph/removeInvalidParenthese.py:13:REDO: great question.
+[done] graph/courseSchedule.py:23:REDO: for practice all the solutions
+[done] graph/jumpGame2.py:15:REDO: go over bfs solution.
+[done] graph/removeInvalidParenthese.py:13:REDO: great question.
 [done] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
 [done] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
 [done] linkedList/copyRandomPointer.py:8:REDO: interesting algorithm
-linkedList/findNodeCycle.py:7:REDO: being able to solve the math part on your own
+[done] linkedList/findNodeCycle.py:7:REDO: being able to solve the math part on your own
 [done] linkedList/linkedlistjoint.py:13:REDO: the short code
 [done] linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
 [done] linkedList/reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
@@ -57,7 +57,7 @@ misc/fractionToDecimal.py:16:REDO: very good question to redo without any help
 [done] misc/generateParentheses.py:15:REDO - really good question
 [done] misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
 [done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
-misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
+[done] misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
 [done] misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
 misc/longestValidParentheses.py:11:REDO: everything. very tricky
 [done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
@@ -78,7 +78,7 @@ misc/skyline.py:7:REDO
 [done] search/searchRotatedArray.py:8:REDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
 [done] search/searchRotatedArrayDuplicates.py:9:REDO: need to figure out the sol on your own this along with #33
 sort/kMostFrequent.py:13:REDO: go over algorithm no need to code everything. look into bucket sort
-sort/quickSelect.py:11:REDO: great question
+[done] sort/quickSelect.py:11:REDO: great question
 stack/largestHistogram.py:12:REDO: related to 42, make sure can do both solutions and know the difference
 [done] stack/minStack.py:19:REDO: figure out how to keep min for all stack
 [done] stack/simplyfyPath.py:10:REDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution

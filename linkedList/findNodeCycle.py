@@ -4,7 +4,7 @@ Given a linked list, find the node where the cycle begins if there is
 a cycle in a linked list.
 
 #142
-REDO: being able to solve the math part on your own
+REDDO: being able to solve the math part on your own
 """
 from ListNode import ListNode
 
