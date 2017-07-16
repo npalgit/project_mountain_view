@@ -31,10 +31,10 @@
 dynamicProgramming/burstBalloons.py:25:REDO: great problem
 dynamicProgramming/distinctSubsequence.py:12:REDO: and similar ones
 dynamicProgramming/editDistance.py:12:REDO
-dynamicProgramming/lis.py:13:#REDO: binary search algorithm
+[done] dynamicProgramming/lis.py:13:#REDO: binary search algorithm
 dynamicProgramming/maximalRectangle.py:14:REDO: know how to do maxHistogram first. Then just read over the solution. no need to code everything.
 dynamicProgramming/regxMatching.py:21:REDO- dp is a little bit complicated with details, this is really a difficult one
-dynamicProgramming/russianDoll.py:11:REDO: review the trick if width are the same.
+[done] dynamicProgramming/russianDoll.py:11:REDO: review the trick if width are the same.
 dynamicProgramming/shortestPalinPartition.py:10:REDO: review both solutions, optionally coding them.
 dynamicProgramming/stockKTimes.py:5:REDO: excellent, watch out for corner cases. and begining index
 dynamicProgramming/wildCardMatching.py:5:REDO: quick for practice. notice the special case invovles preprocessing.

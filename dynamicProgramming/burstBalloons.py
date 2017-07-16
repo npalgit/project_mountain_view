@@ -10,7 +10,7 @@ Find the maximum coins you can collect by bursting the balloons wisely.
 
 Note:
 (1) You may imagine nums[-1] = nums[n] = 1. They are not real therefore you can not burst them.
-(2) 0 ≤ n ≤ 500, 0 ≤ nums[i] ≤ 100
+(2) 0 <= n <= 500, 0 <= nums[i] <= 100
 
 Example:
 
@@ -22,7 +22,7 @@ Return 167
    coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 
 #312
-REDO: great problem
+REDDO: great problem
 """
 def bb(nums):
     nums = [1] + nums + [1]
@@ -38,9 +38,38 @@ def bb(nums):
 
     return dp[0][n-1]
 
+def bb_dfs_r(nums):
+    """
+    13/67 accepted
+    """
+    if not nums: return 0
+    max_val = 0
+    for i in range(len(nums)):
+        lhs = 1 if i == 0 else nums[i-1]
+        rhs = 1 if i == len(nums)-1 else nums[i+1]
+        max_val = max(max_val, \
+            lhs*nums[i]*rhs + bb_dfs_r(nums[:i] + nums[i+1:]))
+
+    return max_val
+
+def bb_dfs_r2(nums, l, r):
+    """
+    13/67 accepted
+    """
+    if l > r: return 0
+    max_val = 0
+    for i in range(l, r+1):
+        lhs = 1 if i == 0 else nums[i-1]
+        rhs = 1 if i == len(nums)-1 else nums[i+1]
+        max_val = max(max_val, \
+            lhs*nums[i]*rhs + bb_dfs_r2(nums, l, i-1) + bb_dfs_r2(nums, i+1, r))
+
+    return max_val
+
 def test1():
     nums = [3, 1, 5, 8]
     print(bb(nums))
+    print(bb_dfs_r(nums))
 
 if __name__ == '__main__':
     test1()

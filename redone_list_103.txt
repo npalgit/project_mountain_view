@@ -28,6 +28,8 @@ total_redo_list_202.txt:27:[done] backtracking/wordBreak2.py:13:REDO: dfs_mem, b
 total_redo_list_202.txt:28:[done] bits/bitwiseAndRange.py:7:REDO: smart algorithm
 total_redo_list_202.txt:29:[done] bits/reverseBits.py:12:REDO: good question
 total_redo_list_202.txt:30:[done] bits/singleNumK.py:5:REDO: crazy smart algorithm
+total_redo_list_202.txt:34:[done] dynamicProgramming/lis.py:13:#REDO: binary search algorithm
+total_redo_list_202.txt:37:[done] dynamicProgramming/russianDoll.py:11:REDO: review the trick if width are the same.
 total_redo_list_202.txt:41:[done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
 total_redo_list_202.txt:42:[done] graph/courseSchedule.py:23:REDO: for practice all the solutions
 total_redo_list_202.txt:43:[done] graph/jumpGame2.py:15:REDO: go over bfs solution.

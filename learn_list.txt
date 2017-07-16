@@ -1,7 +1,7 @@
 #209, binary search solution
 #4, median of uneven arrays, why i+j == m-i + n-j+1, the +1 term
 #140, word breaker2, recusion formula and time complex
-time complexity of knapsack and np-complete
+time complexity of knapsack and np-complete, and dp problems
 #33, search in rotated. the smart algo, and no equals mid sol
 #162, findPeakElement. indices are really annoying
 #74, #240, search mtx 1 and 2

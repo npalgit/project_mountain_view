@@ -10,7 +10,7 @@ Your algorithm should run in O(n2) complexity.
 
 Follow up: Could you improve it to O(n log n) time complexity?
 #300
-#REDO: binary search algorithm
+#REDDO: binary search algorithm
 """
 def lis(nums):
     dp = [0]*len(nums)

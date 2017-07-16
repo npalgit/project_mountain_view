@@ -8,7 +8,7 @@ Example:
 Given envelopes = [[5,4],[6,4],[6,7],[2,3]], 
 y6the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
 #354
-REDO: review the trick if width are the same.
+REDDO: review the trick if width are the same.
 """
 def russianDoll(envs):
     if not envs: return 0

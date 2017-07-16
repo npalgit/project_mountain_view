@@ -35,9 +35,93 @@ def insert(intervals, newInterval):
 
     return left + [Interval(s, e)] + right
 
+def insertInPlace(intervals, newInterval):
+    """
+    Accepted 42.11%
+    """
+    i = 0
+    inserted = False
+    start, end = newInterval.start, newInterval.end
+    for j in range(len(intervals)):
+        curr = intervals[j]
+        if curr.end < start:
+            i += 1
+            continue
+
+        elif end < curr.start and inserted:
+            i += 1
+            prev = intervals[i]
+            prev.start = curr.start
+            prev.end = curr.end
+        elif end < curr.start and not inserted:
+            intervals.insert(i, Interval(start, end))
+            return intervals
+        else:
+            prev = intervals[i]
+            prev.start = min(prev.start, start)
+            prev.end = max(prev.end, end, curr.end)
+            inserted = True
+
+    if not inserted:
+        intervals.append(Interval(start, end))
+        return intervals
+    return intervals[:i+1]
+
+def insertInPlaceDeletion(intervals, newInterval):
+    """
+    28.52% accepted
+    """
+    iStart, iEnd = newInterval.start, newInterval.end
+    i = 0
+    inserted = False
+    while i < len(intervals):
+        prev = intervals[i]
+        if prev.end < iStart:
+            i += 1
+        elif iEnd < prev.start:
+            inserted = True
+            intervals.insert(i, Interval(iStart, iEnd))
+            break
+        else:
+            # modify in place
+            iStart = min(prev.start, iStart)
+            iEnd = max(prev.end, iEnd)
+            intervals.remove(prev)
+
+    if not inserted:
+        intervals.append(Interval(iStart, iEnd))
+    return intervals
 
 def test1():
-    pass
+    nums = [[1, 2], [4, 5], [6, 8], [9, 10], [15, 20]]
+    newInterval = Interval(5, 9)
+    intervals = map(lambda n: Interval(n[0], n[1]), nums)
+    res = insertInPlaceDeletion(intervals, newInterval)
+    print(map(lambda n: (n.start, n.end), res))
+
+def test2():
+    nums = [[4, 5], [6, 8]]
+    newInterval = Interval(1, 2)
+    intervals = map(lambda n: Interval(n[0], n[1]), nums)
+    res = insertInPlaceDeletion(intervals, newInterval)
+    print(map(lambda n: (n.start, n.end), res))
+
+def test3():
+    nums = [[1, 2], [4, 5]]
+    newInterval = Interval(8, 9)
+    intervals = map(lambda n: Interval(n[0], n[1]), nums)
+    res = insertInPlaceDeletion(intervals, newInterval)
+    print(map(lambda n: (n.start, n.end), res))
+
+def test4():
+    nums = [[1, 2], [8, 9]]
+    newInterval = Interval(4, 5)
+    intervals = map(lambda n: Interval(n[0], n[1]), nums)
+    res = insertInPlaceDeletion(intervals, newInterval)
+    print(map(lambda n: (n.start, n.end), res))
 
 if __name__ == '__main__':
     test1()
+    test2()
+    test3()
+    test4()
