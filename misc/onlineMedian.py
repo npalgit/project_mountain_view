@@ -2,7 +2,7 @@
 """
 Find the median of incoming streams of numbers online
 #295
-REDO: reimplement
+REDDO: reimplement
 """
 from heapq import *
 

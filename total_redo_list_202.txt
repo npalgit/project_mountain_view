@@ -61,7 +61,7 @@ misc/fractionToDecimal.py:16:REDO: very good question to redo without any help
 misc/longestValidParentheses.py:11:REDO: everything. very tricky
 [done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
 misc/maxGap.py:12:REDO:Trick here is radix sort
-misc/onlineMedian.py:5:REDO: reimplement
+[done] misc/onlineMedian.py:5:REDO: reimplement
 [done] misc/palinNum.py:9:REDO
 [done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
 [done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.

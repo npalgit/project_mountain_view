@@ -50,6 +50,7 @@ total_redo_list_202.txt:58:[done] misc/insertIntervals.py:15:#REDO: remember try
 total_redo_list_202.txt:59:[done] misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
 total_redo_list_202.txt:60:[done] misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
 total_redo_list_202.txt:62:[done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
+total_redo_list_202.txt:64:[done] misc/onlineMedian.py:5:REDO: reimplement
 total_redo_list_202.txt:65:[done] misc/palinNum.py:9:REDO
 total_redo_list_202.txt:66:[done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
 total_redo_list_202.txt:67:[done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
