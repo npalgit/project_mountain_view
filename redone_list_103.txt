@@ -29,41 +29,46 @@ total_redo_list_202.txt:28:[done] bits/bitwiseAndRange.py:7:REDO: smart algorith
 total_redo_list_202.txt:29:[done] bits/reverseBits.py:12:REDO: good question
 total_redo_list_202.txt:30:[done] bits/singleNumK.py:5:REDO: crazy smart algorithm
 total_redo_list_202.txt:34:[done] dynamicProgramming/lis.py:13:#REDO: binary search algorithm
-total_redo_list_202.txt:37:[done] dynamicProgramming/russianDoll.py:11:REDO: review the trick if width are the same.
-total_redo_list_202.txt:41:[done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
-total_redo_list_202.txt:42:[done] graph/courseSchedule.py:23:REDO: for practice all the solutions
-total_redo_list_202.txt:43:[done] graph/jumpGame2.py:15:REDO: go over bfs solution.
-total_redo_list_202.txt:44:[done] graph/removeInvalidParenthese.py:13:REDO: great question.
-total_redo_list_202.txt:45:[done] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
-total_redo_list_202.txt:46:[done] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
-total_redo_list_202.txt:47:[done] linkedList/copyRandomPointer.py:8:REDO: interesting algorithm
-total_redo_list_202.txt:48:[done] linkedList/findNodeCycle.py:7:REDO: being able to solve the math part on your own
-total_redo_list_202.txt:49:[done] linkedList/linkedlistjoint.py:13:REDO: the short code
-total_redo_list_202.txt:50:[done] linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
-total_redo_list_202.txt:51:[done] linkedList/reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
-total_redo_list_202.txt:52:[done] linkedList/rotateList.py:10:REDO: clever solution
-total_redo_list_202.txt:57:[done] misc/generateParentheses.py:15:REDO - really good question
-total_redo_list_202.txt:58:[done] misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
-total_redo_list_202.txt:59:[done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
-total_redo_list_202.txt:60:[done] misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
-total_redo_list_202.txt:61:[done] misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
-total_redo_list_202.txt:63:[done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
-total_redo_list_202.txt:66:[done] misc/palinNum.py:9:REDO
-total_redo_list_202.txt:67:[done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
-total_redo_list_202.txt:68:[done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
-total_redo_list_202.txt:69:[done] misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
-total_redo_list_202.txt:71:[done] misc/sqrt.py:6:REDO: many smart solutions, try newton method optional
-total_redo_list_202.txt:72:[done] search/findMinInSortedArray.py:12:REDO: need to figure this out fast with no hint
-total_redo_list_202.txt:73:[done] search/findMinInSortedArrayDup.py:11:REDO
-total_redo_list_202.txt:74:[done] search/findPeakElement.py:12:#REDO: this and all similar bin search problem
-total_redo_list_202.txt:75:[done] search/searchInsertPosition.py:14:REDO: Do it in log(n) different binary search methods.
-total_redo_list_202.txt:76:[done] search/searchMtx2.py:22:REDO: learn the trick
-total_redo_list_202.txt:77:[done] search/searchRange.py:15:REDO: this is based on insert pos. good question
-total_redo_list_202.txt:78:[done] search/searchRotatedArray.py:8:REDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
-total_redo_list_202.txt:79:[done] search/searchRotatedArrayDuplicates.py:9:REDO: need to figure out the sol on your own this along with #33
-total_redo_list_202.txt:81:[done] sort/quickSelect.py:11:REDO: great question
-total_redo_list_202.txt:83:[done] stack/minStack.py:19:REDO: figure out how to keep min for all stack
-total_redo_list_202.txt:84:[done] stack/simplyfyPath.py:10:REDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution
+total_redo_list_202.txt:36:[done] dynamicProgramming/russianDoll.py:11:REDO: review the trick if width are the same.
+total_redo_list_202.txt:40:[done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
+total_redo_list_202.txt:41:[done] graph/courseSchedule.py:23:REDO: for practice all the solutions
+total_redo_list_202.txt:42:[done] graph/jumpGame2.py:15:REDO: go over bfs solution.
+total_redo_list_202.txt:43:[done] graph/removeInvalidParenthese.py:13:REDO: great question.
+total_redo_list_202.txt:44:[done] graph/sorroundedRegion.py:18:REDO: classic question no need to recode, be familiar with it
+total_redo_list_202.txt:45:[done] graph/wordSearch.py:27:REDO: need to figure out the correct approach first
+total_redo_list_202.txt:46:[done] linkedList/copyRandomPointer.py:8:REDO: interesting algorithm
+total_redo_list_202.txt:47:[done] linkedList/findNodeCycle.py:7:REDO: being able to solve the math part on your own
+total_redo_list_202.txt:48:[done] linkedList/linkedlistjoint.py:13:REDO: the short code
+total_redo_list_202.txt:49:[done] linkedList/mergeTwoSortedList.py:7:possibly REDO. recursion is very smart. Try to do iteratively
+total_redo_list_202.txt:50:[done] linkedList/reverseInKGrp.py:18:REDO: optionally, do it recursively. Learn how to reverse in one liner.
+total_redo_list_202.txt:51:[done] linkedList/rotateList.py:10:REDO: clever solution
+total_redo_list_202.txt:53:[done] misc/divideTwoInts.py:8:REDO: sol very efficient way of dividing.
+total_redo_list_202.txt:54:[done] misc/factorialTrailingZeros.py:7:REDO
+total_redo_list_202.txt:56:[done] misc/generateParentheses.py:15:REDO - really good question
+total_redo_list_202.txt:57:[done] misc/groupAnagrams.py:14:leetcode #49, maybe REDO, to get familiar with python trick syntax
+total_redo_list_202.txt:58:[done] misc/insertIntervals.py:15:#REDO: remember try not to do it in place
+total_redo_list_202.txt:59:[done] misc/largestNumbers.py:10:REDO: quickly briefly know how to implement
+total_redo_list_202.txt:60:[done] misc/longestConseqSeq.py:13:REDO: unique algo never seen before, know both algos
+total_redo_list_202.txt:62:[done] misc/lru_cache.py:6:REDO: review the trick, as it is a common interview question.
+total_redo_list_202.txt:65:[done] misc/palinNum.py:9:REDO
+total_redo_list_202.txt:66:[done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
+total_redo_list_202.txt:67:[done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
+total_redo_list_202.txt:68:[done] misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
+total_redo_list_202.txt:70:[done] misc/sqrt.py:6:REDO: many smart solutions, try newton method optional
+total_redo_list_202.txt:71:[done] search/findMinInSortedArray.py:12:REDO: need to figure this out fast with no hint
+total_redo_list_202.txt:72:[done] search/findMinInSortedArrayDup.py:11:REDO
+total_redo_list_202.txt:73:[done] search/findPeakElement.py:12:#REDO: this and all similar bin search problem
+total_redo_list_202.txt:74:[done] search/searchInsertPosition.py:14:REDO: Do it in log(n) different binary search methods.
+total_redo_list_202.txt:75:[done] search/searchMtx2.py:22:REDO: learn the trick
+total_redo_list_202.txt:76:[done] search/searchRange.py:15:REDO: this is based on insert pos. good question
+total_redo_list_202.txt:77:[done] search/searchRotatedArray.py:8:REDO: maybe, got it first try. Do it both iteratively, smartly solution, and 2ndBestSolution
+total_redo_list_202.txt:78:[done] search/searchRotatedArrayDuplicates.py:9:REDO: need to figure out the sol on your own this along with #33
+total_redo_list_202.txt:80:[done] sort/quickSelect.py:11:REDO: great question
+total_redo_list_202.txt:81:[done] stack/largestHistogram.py:12:REDO: related to 42, make sure can do both solutions and know the difference
+total_redo_list_202.txt:82:[done] stack/minStack.py:19:REDO: figure out how to keep min for all stack
+total_redo_list_202.txt:83:[done] stack/simplyfyPath.py:10:REDO: maybe using stack is smart, did not think of it first try. Figured out the solution once knowing to use stack. simplier solution
+total_redo_list_202.txt:84:[done] stack/trappingWater.py:9:REDO: really proud, solved this myself. But redo for review
+total_redo_list_202.txt:85:[done] stack/maximalRectangle.py:14:REDO: know how to do maxHistogram first. Then just read over the solution. no need to code everything.
 total_redo_list_202.txt:86:[done] string/reverseWordsInStr.py:12:REDO: part where clean space happens
 total_redo_list_202.txt:87:[done] trees/bstIterator.py:11:REDO: must know
 total_redo_list_202.txt:88:[done] trees/buildTreePreInorder.py:5:REDO: can't find the trick right away. Very smart solution

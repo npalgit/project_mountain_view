@@ -11,7 +11,7 @@ For example, given the following matrix:
 Return 6.
 
 #93
-REDO: know how to do maxHistogram first. Then just read over the solution. no need to code everything.
+REDDO: know how to do maxHistogram first. Then just read over the solution. no need to code everything.
 """
 
 def maxRectangle(mtx):

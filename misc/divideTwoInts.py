@@ -5,7 +5,7 @@ Divide two integers without using multiplication, division and mod operator.
 If it is overflow, return MAX_INT.
 
 leetcode #29
-REDO: sol very efficient way of dividing.
+REDDO: sol very efficient way of dividing.
 """
 def d2Int(t, b):
     # when xor, sgn = 1, if neg
@@ -31,6 +31,39 @@ def d2Int(t, b):
     int_max = 0x7fffffff
     int_min = -int_max-1
     return min(max(int_min, rslt), int_max)
+ # ------------- redo- not expoential inrease, gives TLE --------
+def divide_r(top, bottom):
+    int_max = 0x7fffffff
+    int_min = -int_max-1
+    if top == int_min and bottom == -1:
+        return int_max
+    sign = 1
+    if top < 0 and bottom < 0:
+        top = ~top+1
+        bottom = ~bottom+1
+    elif top < 0 and bottom > 0:
+        sign = -1
+        top = ~top+1
+    elif top > 0 and bottom < 0:
+        sign = -1
+        bottom = ~bottom+1
+
+    if top < bottom or bottom == 0:
+        return 0
+
+    half = bottom
+    count = 2
+    even_odd = 0
+    while True:
+        s_mul = half+half if even_odd == 0 else half+half+bottom
+        if s_mul > top:
+            return count-1 if sign == 1 else ~(count-1)+1
+        count += 1
+        even_odd += 1
+
+        if even_odd == 2:
+            even_odd = 0
+            half += bottom
 
 def test1():
     print(d2Int(100, 2))

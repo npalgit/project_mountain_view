@@ -42,6 +42,21 @@ def largHist(height):
         s.append(i)
     return max_ar
 
+def histogram_r(heights):
+    heights = [-1] + heights + [0]
+    max_area = 0
+    stck = []
+    stck.append(0)
+    for curr in range(1, len(heights)):
+        while heights[curr] <= heights[stck[-1]]:
+            h = heights[stck.pop()]
+            w = curr-stck[-1]-1
+            max_area = max(max_area, h*w)
+
+        stck.append(curr)
+
+    return max_area
+
 def test1():
     height = [2, 1, 5, 6, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2]
     print(largHist(height))
