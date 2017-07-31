@@ -9,7 +9,7 @@ b) Delete a character
 c) Replace a characte
 
 #72
-REDO
+REDDO
 """
 def editDistance(w1, w2):
     dp = [x[:] for x in [[0]*(len(w1)+1)]*(len(w2)+1)]
@@ -29,6 +29,15 @@ def editDistance(w1, w2):
 
     return dp[0][0]
 
+def ed_dfs_r(w1, w2):
+    """
+    TLE 24/1146
+    """
+    if not w1 or not w2: return len(w1) if not w2 else len(w2)
+
+    if w1[0] == w2[0]: return ed_dfs_r(w1[1:], w2[1:])
+
+    return min(ed_dfs_r(w1, w2[1:]), ed_dfs_r(w1[1:], w2), ed_dfs_r(w1[1:], w2[1:]))+1
 def test1():
     w1 = 'execution'
     w2 = 'intention'

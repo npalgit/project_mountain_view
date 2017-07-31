@@ -7,7 +7,7 @@ Return the minimum cuts needed for a palindrome partitioning of s.
 For example, given s = "aab",
 Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
 #132
-REDO: review both solutions, optionally coding them.
+REDDO: review both solutions, optionally coding them.
 """
 def shortestPalinPart(s):
     """
@@ -23,6 +23,23 @@ def shortestPalinPart(s):
             else:
                 dp[beg][end] = min([dp[beg][m]+dp[m+1][end] for m in range(beg, end)])+1
     return dp[0][-1]
+
+def minCut_r(s):
+    n = len(s)
+    dp = [x[:] for x in [[False]*n]*n]
+    cut = [0]*n
+
+    for j in range(n):
+        cut[j] = j
+        for i in reversed(range(j+1)):
+            if s[i] == s[j] and (i+1 >= j-1 or dp[i+1][j-1]):
+                dp[i][j] = True
+                if i == 0:
+                    cut[j] = 0
+                    # break, optional
+                else:
+                    cut[j] = min(cut[j], cut[i-1]+1)
+    return cut[-1]
 
 def isPalin(s):
     return s == s[::-1]
@@ -45,6 +62,16 @@ def shortestPalinPartFaster(s):
         cut[j] = min_v
 
     return cut[-1]
+
+def minCut_dfs_r(s):
+    """
+    21/29 TLE
+    """
+    if isPalin(s): return 0
+    min_cut = len(s)
+    for i in range(1, len(s)):
+        min_cut = min(min_cut, (minCut_dfs_r(s[:i]) + minCut_dfs_r(s[i:])))
+    return min_cut+1
 
 def test1():
     s = 'cabaca'

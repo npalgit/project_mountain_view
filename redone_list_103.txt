@@ -28,8 +28,11 @@ total_redo_list_202.txt:27:[done] backtracking/wordBreak2.py:13:REDO: dfs_mem, b
 total_redo_list_202.txt:28:[done] bits/bitwiseAndRange.py:7:REDO: smart algorithm
 total_redo_list_202.txt:29:[done] bits/reverseBits.py:12:REDO: good question
 total_redo_list_202.txt:30:[done] bits/singleNumK.py:5:REDO: crazy smart algorithm
+total_redo_list_202.txt:32:[done] dynamicProgramming/distinctSubsequence.py:12:REDO: and similar ones
+total_redo_list_202.txt:33:[done] dynamicProgramming/editDistance.py:12:REDO
 total_redo_list_202.txt:34:[done] dynamicProgramming/lis.py:13:#REDO: binary search algorithm
 total_redo_list_202.txt:36:[done] dynamicProgramming/russianDoll.py:11:REDO: review the trick if width are the same.
+total_redo_list_202.txt:37:[done] dynamicProgramming/shortestPalinPartition.py:10:REDO: review both solutions, optionally coding them.
 total_redo_list_202.txt:40:[done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
 total_redo_list_202.txt:41:[done] graph/courseSchedule.py:23:REDO: for practice all the solutions
 total_redo_list_202.txt:42:[done] graph/jumpGame2.py:15:REDO: go over bfs solution.
@@ -55,6 +58,7 @@ total_redo_list_202.txt:65:[done] misc/palinNum.py:9:REDO
 total_redo_list_202.txt:66:[done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
 total_redo_list_202.txt:67:[done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
 total_redo_list_202.txt:68:[done] misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
+total_redo_list_202.txt:69:[done] misc/skyline.py:7:REDO
 total_redo_list_202.txt:70:[done] misc/sqrt.py:6:REDO: many smart solutions, try newton method optional
 total_redo_list_202.txt:71:[done] search/findMinInSortedArray.py:12:REDO: need to figure this out fast with no hint
 total_redo_list_202.txt:72:[done] search/findMinInSortedArrayDup.py:11:REDO

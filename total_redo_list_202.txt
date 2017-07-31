@@ -29,12 +29,12 @@
 [done] bits/reverseBits.py:12:REDO: good question
 [done] bits/singleNumK.py:5:REDO: crazy smart algorithm
 dynamicProgramming/burstBalloons.py:25:REDO: great problem
-dynamicProgramming/distinctSubsequence.py:12:REDO: and similar ones
-dynamicProgramming/editDistance.py:12:REDO
+[done] dynamicProgramming/distinctSubsequence.py:12:REDO: and similar ones
+[done] dynamicProgramming/editDistance.py:12:REDO
 [done] dynamicProgramming/lis.py:13:#REDO: binary search algorithm
 dynamicProgramming/regxMatching.py:21:REDO- dp is a little bit complicated with details, this is really a difficult one
 [done] dynamicProgramming/russianDoll.py:11:REDO: review the trick if width are the same.
-dynamicProgramming/shortestPalinPartition.py:10:REDO: review both solutions, optionally coding them.
+[done] dynamicProgramming/shortestPalinPartition.py:10:REDO: review both solutions, optionally coding them.
 dynamicProgramming/stockKTimes.py:5:REDO: excellent, watch out for corner cases. and begining index
 dynamicProgramming/wildCardMatching.py:5:REDO: quick for practice. notice the special case invovles preprocessing.
 [done] graph/clonegraph.py:18:REDO: Need to get this first try also do BFS.
@@ -66,7 +66,7 @@ misc/maxGap.py:12:REDO:Trick here is radix sort
 [done] misc/permutationSequence.py:17:REDO: smart algorithm and index manipulation
 [done] misc/pow.py:6:REDO: good to redo, to know how to implement with closed eyes.
 [done] misc/scrambleString.py:6:REDO: learn the logic, no necessarily re-write everything
-misc/skyline.py:7:REDO
+[done] misc/skyline.py:7:REDO
 [done] misc/sqrt.py:6:REDO: many smart solutions, try newton method optional
 [done] search/findMinInSortedArray.py:12:REDO: need to figure this out fast with no hint
 [done] search/findMinInSortedArrayDup.py:11:REDO
