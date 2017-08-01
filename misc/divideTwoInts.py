@@ -31,8 +31,34 @@ def d2Int(t, b):
     int_max = 0x7fffffff
     int_min = -int_max-1
     return min(max(int_min, rslt), int_max)
+
+def divide_r(self, top, bottom):
+        """
+        :type dividend: int
+        :type divisor: int
+        :rtype: int
+        """
+        int_max = 0x7fffffff
+        int_min = -int_max-1
+        if top == int_min and bottom == -1:
+            return int_max
+        sgn = (top < 0) ^ (bottom < 0)
+        top = abs(top)
+        bottom = abs(bottom)
+        res = 0
+        while bottom <= top:
+            temp_b = bottom
+
+            i = 1
+            while temp_b <= top:
+                top -= temp_b
+                res += i
+                i <<= 1
+                temp_b <<= 1
+
+        return -res if sgn else res
  # ------------- redo- not expoential inrease, gives TLE --------
-def divide_r(top, bottom):
+def divide_not_exp_r(top, bottom):
     int_max = 0x7fffffff
     int_min = -int_max-1
     if top == int_min and bottom == -1:
