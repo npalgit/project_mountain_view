@@ -15,6 +15,7 @@ def test1():
     print(base26toDec('AFE'))
     print(base26toDec('RI'))
     print(base26toDec('B'))
+    print(base26toDec('Z'))
 
 if __name__ == '__main__':
     test1()

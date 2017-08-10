@@ -83,6 +83,49 @@ def minWindowSlideWin_r(s, t):
 
     return min_len_s if min_len_s != s + 'Z' else ''
 
+def minWindow_r2(s, arr):
+    """
+    re-implement v2. 88.8% acceptance
+    """
+    thresh_hist = {}
+    hist = {}
+    res = s + '1'
+    count, total = 0, 0
+
+    # populate thresh_hist
+    for ch in arr:
+        thresh_hist[ch] = thresh_hist.get(ch, 0) + 1
+        hist[ch] = 0
+        total += 1
+
+    beg, end = 0, -1
+    while end < len(s):
+        # increase the end to cover everything
+        if count < total:
+            end += 1
+            if end == len(s):
+                break
+
+            ch = s[end]
+            if ch not in hist: continue
+                
+            hist[ch] += 1
+            # increase count, if hist element <= thresh_hist
+            if hist[ch] <= thresh_hist[ch]:
+                count += 1
+        else: 
+            # as long as total == count, take min string
+            res = s[beg:end+1] if (end-beg+1) < len(res) else res
+            ch = s[beg]
+            if ch in hist:
+                hist[ch] -= 1
+                # decrease count, if hist element < thresh_hist [done]
+                if hist[ch] < thresh_hist[ch]:
+                    count -= 1
+            beg += 1
+
+    return res if res != s+'1' else ''
+
 def minWindow(s, t):
     """
     TLE with 267/268 accepted.

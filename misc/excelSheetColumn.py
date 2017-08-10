@@ -9,10 +9,12 @@ def convert(n):
     return '' if n == 0 else convert((n-1)/26) + chr((n-1)%26+ord('A'))
 
 def test1():
+    print(convert(1))
     print(convert(527))
     print(convert(837))
     print(convert(477))
     print(convert(2))
+    print(convert(26))
 
 if __name__ == '__main__':
     test1()
