@@ -8,6 +8,9 @@ time complexity of knapsack and np-complete, and dp problems
 #105 pre-order, in-order construction
 n-ary sibling tree, print post order
 
+java, java api, lists
+# what you did for your project, specific, challenges
+
 optional
 #99, recoverTree, morris-traverse perhaps
 #117, the trick of prev, curr

@@ -23,8 +23,8 @@ def makeListsEqual(l1, l2):
     elif len(l2) < len(l1):
         l1 = l1[:len(l2)]
 
-    print(l1)
-    print(l2)
+    print(len(l1))
+    print(len(l2))
 
 def test1():
     l1 = [1, 2, 3, 5, 7, 9, 11]
@@ -49,8 +49,25 @@ def test4():
     l2 = [1, 2, 3, 4]
     makeListsEqual(l1, l2)
 
+def test5():
+    l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 10, 10, 11]
+    l2 = [1, 9, 9, 9, 10]
+    makeListsEqual(l1, l2)
+
+def test6():
+    l1 = read_to_list('start_tid.txt')
+    l2 = read_to_list('end_tid.txt')
+    makeListsEqual(l1, l2)
+
+def read_to_list(f_n):
+    with open(f_n, 'r') as f:
+        res = [int(line.strip()) for line in f]
+    return res
+
 if __name__ == '__main__':
     test1()
     test2()
     test3()
     test4()
+    test5()
+    test6()
