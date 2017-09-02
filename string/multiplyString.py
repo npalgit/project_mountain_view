@@ -57,12 +57,26 @@ def mulStringsLC_BigEndian(l1, l2):
 
     return ''.join(map(str, rslt))
 
+def mulStr_r(s1,  s2):
+    res = [0]*(len(s1)+len(s2))
+    for i in range(len(s1)):
+        for j in range(len(s2)):
+            ch_1 = s1[len(s1)-i-1]
+            ch_2 = s2[len(s2)-j-1]
+            res[i+j] += (ord(ch_1)-ord('0'))*(ord(ch_2)-ord('0'))
+            res[i+j+1] += res[i+j]/10
+            res[i+j] = res[i+j]%10
+
+    while res and res[-1] == 0: res.pop()
+    return ''.join(map(str, res[::-1]))
+
 def test1():
     l1 = "1234"
     l2 = "6701"
     print(mulStrings(l1, l2))
     print(mulStringsLC_LittleEndian(l1, l2))
     print(mulStringsLC_BigEndian(l1, l2))
+    print(mulStr_r(l1, l2))
     print("----------------")
 
 def test2():
@@ -71,6 +85,7 @@ def test2():
     print(mulStrings(l1, l2))
     print(mulStringsLC_LittleEndian(l1, l2))
     print(mulStringsLC_BigEndian(l1, l2))
+    print(mulStr_r(l1, l2))
     print("----------------")
 
 def test3():
@@ -79,6 +94,7 @@ def test3():
     print(mulStrings(l1, l2))
     print(mulStringsLC_LittleEndian(l1, l2))
     print(mulStringsLC_BigEndian(l1, l2))
+    print(mulStr_r(l1, l2))
     print("----------------")
 
 def test4():
@@ -87,6 +103,7 @@ def test4():
     print(mulStrings(l1, l2))
     print(mulStringsLC_LittleEndian(l1, l2))
     print(mulStringsLC_BigEndian(l1, l2))
+    print(mulStr_r(l1, l2))
     print("----------------")
 
 def test5():
@@ -95,6 +112,7 @@ def test5():
     print(mulStrings(l1, l2))
     print(mulStringsLC_LittleEndian(l1, l2))
     print(mulStringsLC_BigEndian(l1, l2))
+    print(mulStr_r(l1, l2))
     print("----------------")
 
 if __name__ == "__main__":

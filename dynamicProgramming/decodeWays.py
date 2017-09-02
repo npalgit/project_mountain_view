@@ -29,14 +29,45 @@ def decodeWays(s):
 
     return rslt[-1]
 
+def decodeWays_r(s):
+    if not s: return 0
+    dp = [0]*(len(s)+1)
+    dp[-1] = 1
+    dp[-2] = 1 if s[-1] != '0' else 0
+    for i in reversed(range(len(s)-1)):
+        if s[i] == '0':
+            continue
+
+        dp[i] = dp[i+1]
+        if int(s[i:i+2]) >= 10 and int(s[i:i+2]) <= 26:
+            dp[i] += dp[i+2]
+
+    return dp[0]
+
 def test1():
     print(decodeWays('2134718'))
+    print(decodeWays_r('2134718'))
+    print('--------------')
     print(decodeWays('21003'))
+    print(decodeWays_r('21003'))
+    print('--------------')
     print(decodeWays('2134208'))
+    print(decodeWays_r('2134208'))
+    print('--------------')
     print(decodeWays('1000001'))
+    print(decodeWays_r('1000001'))
+    print('--------------')
     print(decodeWays('0'))
+    print(decodeWays_r('0'))
+    print('--------------')
     print(decodeWays(''))
+    print(decodeWays_r(''))
+    print('--------------')
     print(decodeWays('10'))
+    print(decodeWays_r('10'))
+    print('--------------')
+    print(decodeWays('10241201'))
+    print(decodeWays_r('10241201'))
 
 if __name__ == '__main__':
     test1()
