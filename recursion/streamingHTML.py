@@ -4,6 +4,8 @@ Stream the HTML content given the representation below.
     input (represented by graph below):
         None
         |
+        HTML
+        |
      --BODY --------
     |   |  \   \    \
     |   A   |  DIV  |
@@ -60,6 +62,8 @@ def test1():
     """
     input (represented by graph below):
         None
+        |
+        HTML
         |
      --BODY --------
     |   |  \   \    \
